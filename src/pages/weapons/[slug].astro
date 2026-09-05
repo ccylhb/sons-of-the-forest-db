@@ -1,0 +1,80 @@
+---
+import Base from "../../layouts/Base.astro";
+import weapons from "../../data/weapons.json";
+
+export function getStaticPaths() {
+  return weapons.map((w) => ({
+    params: { slug: w.slug },
+    props: { weapon: w },
+  }));
+}
+
+const { weapon } = Astro.props;
+const sameType = weapons
+  .filter((w) => w.type && weapon.type && w.type === weapon.type && w.slug !== weapon.slug)
+  .slice(0, 8);
+const typeSlug = (weapon.type || "other").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+const title = `${weapon.name} – Sons of the Forest Weapon`;
+const desc =
+  weapon.summary ||
+  `${weapon.name} is ${/^[aeiou]/i.test(weapon.type || "") ? "an" : "a"} ${weapon.type || "weapon"} in Sons of the Forest. See damage stats, speed and where to find it.`;
+---
+
+<Base title={title} description={`Sons of the Forest ${weapon.name}: damage (standard/charged/downward), speed, range, how to get it and combat tips. ${desc.slice(0, 100)}`}>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <a href="/weapons/">Weapons</a> ›
+    <a href={`/weapons/type/${typeSlug}/`}>{weapon.type || "Other"}</a> ›
+    <span>{weapon.name}</span>
+  </nav>
+  <h1>{weapon.name}</h1>
+
+  <div class="card" style="margin:1rem 0">
+    <table>
+      {weapon.type && <tr><th>Type</th><td>{weapon.type}</td></tr>}
+      {weapon.distance && <tr><th>Range</th><td>{weapon.distance}</td></tr>}
+      {weapon.speed && <tr><th>Speed</th><td>{weapon.speed}</td></tr>}
+      {weapon.damageStandard && <tr><th>Standard Attack</th><td><strong>{weapon.damageStandard}</strong></td></tr>}
+      {weapon.damageCharged && <tr><th>Charged Attack</th><td><strong>{weapon.damageCharged}</strong></td></tr>}
+      {weapon.damageDownward && <tr><th>Downward Attack</th><td><strong>{weapon.damageDownward}</strong></td></tr>}
+      {weapon.solafite && <tr><th>Solafite Plating</th><td>Supported ✓</td></tr>}
+      {weapon.block && <tr><th>Blocking</th><td>{weapon.block}</td></tr>}
+      {weapon.obtained && <tr><th>How to Get</th><td>{weapon.obtained}</td></tr>}
+      {weapon.location && <tr><th>Location</th><td>{weapon.location}</td></tr>}
+      {weapon.ammo && <tr><th>Ammo</th><td>{weapon.ammo}</td></tr>}
+      {weapon.capacity && <tr><th>Capacity</th><td>{weapon.capacity}</td></tr>}
+      {weapon.alias && <tr><th>Also Known As</th><td>{weapon.alias}</td></tr>}
+    </table>
+  </div>
+
+  {weapon.summary && (
+    <>
+      <h2>About {weapon.name}</h2>
+      <p>{weapon.summary}</p>
+    </>
+  )}
+
+  <p class="muted">
+    {weapon.name} deals {weapon.damageStandard || "?"} damage on a standard attack in Sons of the Forest.
+    Compare it with other {weapon.type || "weapon"}s using the links below.
+  </p>
+
+  {sameType.length > 0 && (
+    <>
+      <h2>More {weapon.type} Weapons</h2>
+      <ul class="cols2">
+        {sameType.map((w) => (
+          <li><a href={`/weapons/${w.slug}/`}>{w.name}</a>{w.damageStandard ? <span class="muted"> ({w.damageStandard} dmg)</span> : ""}</li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${weapon.name} – Sons of the Forest Weapon`,
+    description: desc,
+    about: { "@type": "Thing", name: weapon.name },
+    isPartOf: { "@type": "WebSite", name: "TimberDB" },
+  })} />
+</Base>

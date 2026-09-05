@@ -1,0 +1,48 @@
+{
+  "siteName": "TimberDB",
+  "siteUrl": "https://sons-of-the-forest-db.pages.dev",
+  "tagline": "Sons of the Forest database — weapons, armor, items, animals & crafting",
+  "description": "Sons of the Forest database — weapons, armor, items, animals & crafting — complete searchable database with guides.",
+  "adsenseClientId": "ca-pub-3245910354455258",
+  "adsensePublisherId": "pub-3245910354455258",
+  "theme": {
+    "bg": "#14171f",
+    "bgSoft": "#1b1f2a",
+    "card": "#222736",
+    "border": "#2e3548",
+    "text": "#e6e9f0",
+    "muted": "#9aa3b5",
+    "accent": "#3f9d55",
+    "accent2": "#e8a33d",
+    "good": "#7bd88f",
+    "bad": "#f26d6d"
+  },
+  "favicon": "🌲",
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Weapons",
+      "href": "/weapons/"
+    },
+    {
+      "label": "Items",
+      "href": "/items/"
+    },
+    {
+      "label": "Enemies",
+      "href": "/enemies/"
+    },
+    {
+      "label": "Guides",
+      "href": "/guides/"
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    }
+  ],
+  "footerNote": "Fan-made database. Not affiliated with the game publisher."
+}

@@ -1,0 +1,55 @@
+---
+import Base from "../../layouts/Base.astro";
+import DataTable from "../../components/DataTable.astro";
+import items from "../../data/items.json";
+
+const rows = items
+  .map((i) => ({
+    name: i.name,
+    type: i.type || "-",
+    stack: i.stack || "-",
+    obtained: i.obtained || "-",
+    href: `/items/${i.slug}/`,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<Base
+  title="Sons of the Forest Items Database – All Items with Stats"
+  description={`Complete list of all ${items.length} items in Sons of the Forest: resources, tools and materials with stack size, how to obtain them and what they are used for.`}
+>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <span>Items</span>
+  </nav>
+  <h1>Sons of the Forest Items Database</h1>
+  <p>
+    All <strong>{items.length} items</strong> in Sons of the Forest — resources, materials and gear.
+    Click any item for full details: how to get it, stack size and what it's used for.
+  </p>
+
+  <h2>All Items</h2>
+  <DataTable
+    id="items"
+    rows={rows}
+    searchPlaceholder="Search items..."
+    columns={[
+      { key: "name", label: "Item", href: "href" },
+      { key: "type", label: "Type" },
+      { key: "stack", label: "Stack", type: "number" },
+      { key: "obtained", label: "Obtained" },
+    ]}
+  />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Sons of the Forest Items Database",
+    numberOfItems: items.length,
+    itemListElement: items.slice(0, 50).map((i, n) => ({
+      "@type": "ListItem",
+      position: n + 1,
+      name: i.name,
+      url: `/items/${i.slug}/`,
+    })),
+  })} />
+</Base>

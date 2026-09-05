@@ -1,0 +1,83 @@
+---
+import Base from "../../layouts/Base.astro";
+import items from "../../data/items.json";
+import weapons from "../../data/weapons.json";
+
+export function getStaticPaths() {
+  return items.map((i) => ({
+    params: { slug: i.slug },
+    props: { item: i },
+  }));
+}
+
+const { item } = Astro.props;
+const related = items
+  .filter((i) => i.obtained && item.obtained && i.obtained === item.obtained && i.slug !== item.slug)
+  .slice(0, 8);
+const weaponMatch = weapons.find((w) => w.slug === item.slug);
+const title = `${item.name} – Sons of the Forest Item`;
+const desc =
+  item.summary ||
+  `${item.name} is an item in Sons of the Forest${item.obtained ? ` obtained through ${item.obtained.toLowerCase()}` : ""}. See stack size, uses and how to get it.`;
+---
+
+<Base title={title} description={`Sons of the Forest ${item.name}: how to get it, stack size, uses and crafting recipes. ${desc.slice(0, 100)}`}>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <a href="/items/">Items</a> › <span>{item.name}</span>
+  </nav>
+  <h1>{item.name}</h1>
+  {item.alias && item.alias !== item.name && <p class="muted">Also known as: {item.alias}</p>}
+
+  <div class="card" style="margin:1rem 0">
+    <table>
+      {item.type && <tr><th>Type</th><td>{item.type}</td></tr>}
+      {item.stack && <tr><th>Stack Size</th><td>{item.stack}</td></tr>}
+      {item.obtained && <tr><th>How to Get</th><td>{item.obtained}</td></tr>}
+      {item.gameId && <tr><th>Item ID</th><td>{item.gameId}</td></tr>}
+      {item.consumable && <tr><th>Consumable</th><td>{item.consumable}</td></tr>}
+      {item.equippable && <tr><th>Equippable</th><td>{item.equippable}</td></tr>}
+      {item.uses && <tr><th>Used For</th><td>{item.uses}</td></tr>}
+      {item.location && <tr><th>Location</th><td>{item.location}</td></tr>}
+    </table>
+  </div>
+
+  {weaponMatch && (
+    <p>
+      {item.name} is also a weapon — see its full combat stats on the{" "}
+      <a href={`/weapons/${weaponMatch.slug}/`}>{item.name} weapon page</a>.
+    </p>
+  )}
+
+  {item.summary && (
+    <>
+      <h2>About {item.name}</h2>
+      <p>{item.summary}</p>
+    </>
+  )}
+
+  <p class="muted">
+    {item.name} is a survival item in Sons of the Forest.
+    Compare it with other items in the <a href="/items/">items database</a> or browse the{" "}
+    <a href="/weapons/">weapons database</a>.
+  </p>
+
+  {related.length > 0 && (
+    <>
+      <h2>Related Items</h2>
+      <ul class="cols2">
+        {related.map((i) => (
+          <li><a href={`/items/${i.slug}/`}>{i.name}</a></li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${item.name} – Sons of the Forest Item`,
+    description: desc,
+    about: { "@type": "Thing", name: item.name },
+    isPartOf: { "@type": "WebSite", name: "TimberDB" },
+  })} />
+</Base>

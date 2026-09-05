@@ -1,0 +1,74 @@
+---
+import Base from "../../../layouts/Base.astro";
+import DataTable from "../../../components/DataTable.astro";
+import enemies from "../../../data/enemies.json";
+
+export function getStaticPaths() {
+  const groups = {};
+  for (const e of enemies) {
+    const g = e.group || "Other";
+    (groups[g] ||= []).push(e);
+  }
+  return Object.entries(groups).map(([group, list]) => ({
+    params: { group: group.toLowerCase().replace(/[^a-z0-9]+/g, "-") },
+    props: { group, list },
+  }));
+}
+
+const { group, list } = Astro.props;
+const rows = list
+  .map((e) => ({
+    name: e.name,
+    health: e.health || "-",
+    speed: e.speed || "-",
+    weakness: e.weakness || "-",
+    drops: e.drops || "-",
+    href: `/enemies/${e.slug}/`,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+const title = `Sons of the Forest ${group} – Complete List (${list.length})`;
+---
+
+<Base
+  title={title}
+  description={`All ${list.length} ${group} in Sons of the Forest with health, speed, weaknesses and drops. Sortable table, click any enemy for details.`}
+>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <a href="/enemies/">Enemies</a> › <span>{group}</span>
+  </nav>
+  <h1>Sons of the Forest {group}</h1>
+  <p>
+    Complete list of all <strong>{list.length}</strong> in this group.
+    Click an enemy for full stats, weaknesses and spawn locations.
+  </p>
+
+  <DataTable
+    id={`e-${group.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+    rows={rows}
+    searchPlaceholder={`Search ${group.toLowerCase()}...`}
+    columns={[
+      { key: "name", label: "Enemy", href: "href" },
+      { key: "health", label: "Health" },
+      { key: "speed", label: "Speed" },
+      { key: "weakness", label: "Weakness" },
+      { key: "drops", label: "Drops" },
+    ]}
+  />
+
+  <p style="margin-top:1.5rem">
+    <a href="/enemies/">← Back to all enemies</a>
+  </p>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `Sons of the Forest ${group}`,
+    numberOfItems: list.length,
+    itemListElement: list.slice(0, 30).map((e, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: e.name,
+      url: `/enemies/${e.slug}/`,
+    })),
+  })} />
+</Base>
