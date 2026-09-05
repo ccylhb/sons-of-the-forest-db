@@ -36,6 +36,14 @@
       "href": "/enemies/"
     },
     {
+      "label": "Animals",
+      "href": "/animals/"
+    },
+    {
+      "label": "Consumables",
+      "href": "/consumables/"
+    },
+    {
       "label": "Guides",
       "href": "/guides/"
     },

@@ -1,0 +1,38 @@
+---
+import Base from "../../../layouts/Base.astro";
+import animals from "../../../data/animals.json";
+
+export function getStaticPaths() {
+  const groups = [...new Set(animals.map((a) => a.attitude || "Other"))];
+  const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  return groups.map((g) => ({
+    params: { group: slugify(g) },
+    props: {
+      group: g,
+      items: animals.filter((a) => (a.attitude || "Other") === g),
+    },
+  }));
+}
+
+const { group, items } = Astro.props;
+const title = `${group} Animals in Sons of the Forest`;
+---
+
+<Base title={`${title} – TimberDB`} description={`All ${items.length} ${group.toLowerCase()} animals in Sons of the Forest: spawn locations, types and loot for each one.`}>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <a href="/animals/">Animals</a> › <span>{group}</span>
+  </nav>
+  <h1>{title}</h1>
+  <p>{items.length} animals with a <strong>{group.toLowerCase()}</strong> temperament:</p>
+  <ul class="cols2">
+    {items
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((a) => (
+        <li>
+          <a href={`/animals/${a.slug}/`}>{a.name}</a>
+          {a.group ? <span class="muted"> ({a.group})</span> : ""}
+        </li>
+      ))}
+  </ul>
+  <p><a href="/animals/">← Back to all animals</a></p>
+</Base>

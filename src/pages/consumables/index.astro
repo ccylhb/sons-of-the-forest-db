@@ -1,0 +1,79 @@
+---
+import Base from "../../layouts/Base.astro";
+import DataTable from "../../components/DataTable.astro";
+import consumables from "../../data/consumables.json";
+
+const rows = consumables
+  .map((c) => ({
+    name: c.name,
+    group: c.group || "-",
+    effects: c.effects || "-",
+    health: c.health || "-",
+    energy: c.energy || "-",
+    hydration: c.hydration || "-",
+    href: `/consumables/${c.slug}/`,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const byGroup = {};
+for (const c of consumables) {
+  const g = c.group || "Other";
+  (byGroup[g] ||= []).push(c);
+}
+---
+
+<Base
+  title="Sons of the Forest Consumables Database – Food, Drinks & Medicine"
+  description={`Complete list of all ${consumables.length} consumables in Sons of the Forest: food, drinks, medicine and mixes with exact health, stamina, energy, hydration and fullness effects.`}
+>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <span>Consumables</span>
+  </nav>
+  <h1>Sons of the Forest Consumables Database</h1>
+  <p>
+    All <strong>{consumables.length} consumables</strong> in Sons of the Forest — berries, meat,
+    drinks and medical mixes with their exact stat effects (health, stamina, energy, hydration, fullness).
+  </p>
+
+  <div class="card" style="margin:1rem 0">
+    <h2 style="margin-top:0">Browse by Category</h2>
+    <ul class="cols2">
+      {Object.entries(byGroup)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([g, list]) => (
+          <li>
+            <a href={`/consumables/group/${g.toLowerCase().replace(/[^a-z0-9]+/g, "-")}/`}>{g}</a>
+            <span class="muted"> ({list.length})</span>
+          </li>
+        ))}
+    </ul>
+  </div>
+
+  <h2>All Consumables</h2>
+  <DataTable
+    id="consumables"
+    rows={rows}
+    searchPlaceholder="Search consumables..."
+    columns={[
+      { key: "name", label: "Item", href: "href" },
+      { key: "group", label: "Category" },
+      { key: "effects", label: "Effects" },
+      { key: "health", label: "Health" },
+      { key: "energy", label: "Energy" },
+      { key: "hydration", label: "Hydration" },
+    ]}
+  />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Sons of the Forest Consumables Database",
+    numberOfItems: consumables.length,
+    itemListElement: consumables.slice(0, 30).map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      url: `/consumables/${c.slug}/`,
+    })),
+  })} />
+</Base>

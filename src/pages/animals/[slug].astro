@@ -1,0 +1,74 @@
+---
+import Base from "../../layouts/Base.astro";
+import animals from "../../data/animals.json";
+
+export function getStaticPaths() {
+  return animals.map((a) => ({
+    params: { slug: a.slug },
+    props: { animal: a },
+  }));
+}
+
+const { animal } = Astro.props;
+const sameGroup = animals
+  .filter((a) => a.group && animal.group && a.group === animal.group && a.slug !== animal.slug)
+  .slice(0, 8);
+const groupSlug = (animal.attitude || "other").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+const title = `${animal.name} – Sons of the Forest Animal`;
+const desc =
+  animal.summary ||
+  `${animal.name} is ${/^[aeiou]/i.test(animal.group || "") ? "an" : "a"} ${animal.group || "animal"} in Sons of the Forest. See spawn locations, temperament and loot.`;
+---
+
+<Base title={title} description={`Sons of the Forest ${animal.name}: where it spawns, temperament, what it drops and how to hunt or trap it. ${desc.slice(0, 100)}`}>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <a href="/animals/">Animals</a> ›
+    <a href={`/animals/group/${groupSlug}/`}>{animal.attitude || "Other"}</a> ›
+    <span>{animal.name}</span>
+  </nav>
+  <h1>{animal.name}</h1>
+  {animal.alias && animal.alias !== animal.name && <p class="muted">Also known as: {animal.alias}</p>}
+
+  <div class="card" style="margin:1rem 0">
+    <table>
+      {animal.group && <tr><th>Type</th><td>{animal.group}</td></tr>}
+      {animal.attitude && <tr><th>Temperament</th><td><strong>{animal.attitude}</strong></td></tr>}
+      {animal.location && <tr><th>Location</th><td>{animal.location}</td></tr>}
+      {animal.season && <tr><th>Season</th><td>{animal.season}</td></tr>}
+      {animal.loot && <tr><th>Loot</th><td>{animal.loot}</td></tr>}
+    </table>
+  </div>
+
+  {animal.summary && (
+    <>
+      <h2>About {animal.name}</h2>
+      <p>{animal.summary}</p>
+    </>
+  )}
+
+  <p class="muted">
+    Hunting {animal.name} is easiest with a <a href="/weapons/type/ranged/">ranged weapon</a> —
+    check the stats table above for what you get. For healing after a fight, see the
+    <a href="/consumables/">consumables database</a>.
+  </p>
+
+  {sameGroup.length > 0 && (
+    <>
+      <h2>More {animal.group}</h2>
+      <ul class="cols2">
+        {sameGroup.map((a) => (
+          <li><a href={`/animals/${a.slug}/`}>{a.name}</a>{a.attitude ? <span class="muted"> ({a.attitude})</span> : ""}</li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${animal.name} – Sons of the Forest Animal`,
+    description: desc,
+    about: { "@type": "Thing", name: animal.name },
+    isPartOf: { "@type": "WebSite", name: "TimberDB" },
+  })} />
+</Base>

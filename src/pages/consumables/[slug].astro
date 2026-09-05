@@ -1,0 +1,84 @@
+---
+import Base from "../../layouts/Base.astro";
+import consumables from "../../data/consumables.json";
+
+export function getStaticPaths() {
+  return consumables.map((c) => ({
+    params: { slug: c.slug },
+    props: { item: c },
+  }));
+}
+
+const { item } = Astro.props;
+const sameGroup = consumables
+  .filter((c) => c.group && item.group && c.group === item.group && c.slug !== item.slug)
+  .slice(0, 8);
+const groupSlug = (item.group || "other").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+const title = `${item.name} – Sons of the Forest Consumable`;
+const desc =
+  item.summary ||
+  `${item.name} is ${/^[aeiou]/i.test(item.group || "") ? "an" : "a"} ${item.group || "consumable"} in Sons of the Forest. See its exact effects on health, stamina, energy, hydration and fullness.`;
+const stats = [
+  ["Health", item.health],
+  ["Stamina", item.stamina],
+  ["Energy", item.energy],
+  ["Hydration", item.hydration],
+  ["Fullness", item.fullness],
+].filter(([, v]) => v);
+---
+
+<Base title={title} description={`Sons of the Forest ${item.name}: exact stat effects (health, stamina, energy, hydration, fullness), how to get it and how to store it. ${desc.slice(0, 100)}`}>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <a href="/consumables/">Consumables</a> ›
+    <a href={`/consumables/group/${groupSlug}/`}>{item.group || "Other"}</a> ›
+    <span>{item.name}</span>
+  </nav>
+  <h1>{item.name}</h1>
+  {item.alias && item.alias !== item.name && <p class="muted">Also known as: {item.alias}</p>}
+
+  <div class="card" style="margin:1rem 0">
+    <table>
+      {item.group && <tr><th>Category</th><td>{item.group}</td></tr>}
+      {stats.length > 0 && <tr><th>Effects</th><td>{stats.map(([k, v]) => `${k} ${v}`).join(" · ")}</td></tr>}
+      {item.effects && <tr><th>Special</th><td><strong>{item.effects}</strong></td></tr>}
+      {item.obtained && <tr><th>Obtained</th><td>{item.obtained}</td></tr>}
+      {item.stack && <tr><th>Max Stack</th><td>{item.stack}</td></tr>}
+      {item.id && <tr><th>Item ID</th><td>{item.id}</td></tr>}
+      {item.spoil && <tr><th>Can Spoil</th><td>{item.spoil}</td></tr>}
+      {item.storage && <tr><th>Storage</th><td>{item.storage}</td></tr>}
+    </table>
+  </div>
+
+  {item.summary && (
+    <>
+      <h2>About {item.name}</h2>
+      <p>{item.summary}</p>
+    </>
+  )}
+
+  <p class="muted">
+    Keeping your meters full is the core survival loop in Sons of the Forest — food for fullness,
+    drinks for hydration, and mixes for a quick health top-up. Pair this with
+    <a href="/weapons/">the right weapon</a> to hunt <a href="/animals/">animals</a> for meat.
+  </p>
+
+  {sameGroup.length > 0 && (
+    <>
+      <h2>More {item.group}</h2>
+      <ul class="cols2">
+        {sameGroup.map((c) => (
+          <li><a href={`/consumables/${c.slug}/`}>{c.name}</a></li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: `${item.name} – Sons of the Forest Consumable`,
+    description: desc,
+    about: { "@type": "Thing", name: item.name },
+    isPartOf: { "@type": "WebSite", name: "TimberDB" },
+  })} />
+</Base>

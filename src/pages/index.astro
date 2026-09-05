@@ -5,6 +5,8 @@ import site from "../../site.config.json";
 import weapons from "../data/weapons.json";
 import items from "../data/items.json";
 import enemies from "../data/enemies.json";
+import animals from "../data/animals.json";
+import consumables from "../data/consumables.json";
 ---
 
 <Base title={`${site.siteName} - ${site.tagline}`} description={site.description}>
@@ -14,6 +16,8 @@ import enemies from "../data/enemies.json";
     <GuideLink title="Weapons Database" desc={`All ${weapons.length} weapons with damage, speed and locations.`} href="/weapons/" badge="Weapons" />
     <GuideLink title="Items Database" desc={`All ${items.length} items with stack size and uses.`} href="/items/" badge="Items" />
     <GuideLink title="Enemies Database" desc={`All ${enemies.length} enemies with health, weaknesses and drops.`} href="/enemies/" badge="Enemies" />
+    <GuideLink title="Animals Database" desc={`All ${animals.length} animals with temperament, locations and loot.`} href="/animals/" badge="Animals" />
+    <GuideLink title="Consumables Database" desc={`All ${consumables.length} consumables with exact stat effects.`} href="/consumables/" badge="Food" />
     <GuideLink title="Guides & Walkthroughs" desc="Step-by-step guides and survival tips." href="/guides/" badge="Guides" />
     <GuideLink title="About This Site" desc="Who we are and how data is sourced." href="/about/" badge="Info" />
   </div>

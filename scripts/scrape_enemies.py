@@ -29,15 +29,6 @@ def mutant_field(wikitext: str, *names: str) -> str:
     return ""
 
 
-def intro_text(wikitext: str, limit: int = 600) -> str:
-    """First prose paragraph before any == heading (after infobox/templates)."""
-    body = re.split(r"\n==+ ", wikitext, maxsplit=1)[0]
-    # drop templates and empty lines
-    body = strip_templates(body)
-    paras = [clean_ws(p) for p in body.split("\n") if len(clean_ws(p)) > 60]
-    return (paras[0] if paras else "")[:limit]
-
-
 def main() -> None:
     members = category_members("Category:Enemies")
     titles = [

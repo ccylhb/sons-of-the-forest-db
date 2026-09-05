@@ -71,6 +71,42 @@ def clean_ws(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def clean_html(val: str) -> str:
+    return re.sub(r"<[^>]+>", "", val).strip()
+
+
+def intro_text(wikitext: str, limit: int = 600) -> str:
+    """First prose paragraph before any == heading (after infobox/templates)."""
+    body = re.split(r"\n==+ ", wikitext, maxsplit=1)[0]
+    body = strip_templates(body)
+    paras = []
+    for p in body.split("\n"):
+        p = clean_ws(p)
+        if len(p) <= 60:
+            continue
+        # drop leftover infobox-field junk like "title = image = X.png ..."
+        if p.count("=") >= 2 and "http" not in p:
+            continue
+        paras.append(p)
+    return (paras[0] if paras else "")[:limit]
+
+
+def best_summary(wikitext: str, limit: int = 600) -> str:
+    """Best-effort description: intro paragraph first, else first substantive
+    section (skipping Updates/Gallery/References boilerplate)."""
+    skip = {"updates", "gallery", "references", "external links", "see also", "trivia"}
+    s = intro_text(wikitext)
+    if len(s) >= 80:
+        return s[:limit]
+    for m in re.finditer(r"==+\s*([^=\n]+?)\s*==+\n(.*?)(?=\n==|\Z)", wikitext, flags=re.S):
+        if m.group(1).strip().lower() in skip:
+            continue
+        txt = clean_ws(strip_templates(m.group(2)))
+        if len(txt) >= 80:
+            return txt[:limit]
+    return s
+
+
 def section_text(wikitext: str, heading: str, limit: int = 600) -> str:
     m = re.search(rf"==+\s*{re.escape(heading)}\s*==+\n(.*?)(?=\n==|\Z)", wikitext, flags=re.S)
     if not m:

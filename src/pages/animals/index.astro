@@ -1,0 +1,77 @@
+---
+import Base from "../../layouts/Base.astro";
+import DataTable from "../../components/DataTable.astro";
+import animals from "../../data/animals.json";
+
+const rows = animals
+  .map((a) => ({
+    name: a.name,
+    group: a.group || "-",
+    attitude: a.attitude || "-",
+    location: a.location || "-",
+    loot: a.loot || "-",
+    href: `/animals/${a.slug}/`,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const byAttitude = {};
+for (const a of animals) {
+  const g = a.attitude || "Other";
+  (byAttitude[g] ||= []).push(a);
+}
+---
+
+<Base
+  title="Sons of the Forest Animals Database – Wildlife, Locations & Loot"
+  description={`Complete list of all ${animals.length} animals in Sons of the Forest: deer, moose, rabbits, sharks and more, with temperament, locations and loot tables.`}
+>
+  <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
+    <a href="/">Home</a> › <span>Animals</span>
+  </nav>
+  <h1>Sons of the Forest Animals Database</h1>
+  <p>
+    All <strong>{animals.length} animals</strong> in Sons of the Forest — where each one spawns,
+    whether it is passive or aggressive, and what it drops when skinned.
+  </p>
+
+  <div class="card" style="margin:1rem 0">
+    <h2 style="margin-top:0">Browse by Temperament</h2>
+    <ul class="cols2">
+      {Object.entries(byAttitude)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([g, list]) => (
+          <li>
+            <a href={`/animals/group/${g.toLowerCase().replace(/[^a-z0-9]+/g, "-")}/`}>{g}</a>
+            <span class="muted"> ({list.length})</span>
+          </li>
+        ))}
+    </ul>
+  </div>
+
+  <h2>All Animals</h2>
+  <DataTable
+    id="animals"
+    rows={rows}
+    searchPlaceholder="Search animals..."
+    columns={[
+      { key: "name", label: "Animal", href: "href" },
+      { key: "group", label: "Type" },
+      { key: "attitude", label: "Temperament" },
+      { key: "location", label: "Location" },
+      { key: "loot", label: "Loot" },
+    ]}
+  />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Sons of the Forest Animals Database",
+    numberOfItems: animals.length,
+    itemListElement: animals.slice(0, 30).map((a, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: a.name,
+      url: `/animals/${a.slug}/`,
+    })),
+  })} />
+</Base>
