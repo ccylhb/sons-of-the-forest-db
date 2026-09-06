@@ -25,11 +25,13 @@
     },
     {
       "label": "Rankings",
-      "href": "/rankings/"
+      "href": "/rankings/",
+      "tool": true
     },
     {
       "label": "Food Planner",
-      "href": "/calculator/"
+      "href": "/calculator/",
+      "tool": true
     },
     {
       "label": "Weapons",
@@ -60,5 +62,7 @@
       "href": "/about/"
     }
   ],
-  "footerNote": "Fan-made database. Not affiliated with the game publisher."
+  "footerNote": "Fan-made database. Not affiliated with the game publisher.",
+  "gameVersion": "1.0",
+  "dataUpdated": "2026-09-06"
 }

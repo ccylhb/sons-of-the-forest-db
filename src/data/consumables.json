@@ -15,7 +15,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Aloe Vera",
-  "slug": "Aloe_Vera"
+  "slug": "Aloe_Vera",
+  "icon": "/icons/Aloe_Vera.png"
  },
  {
   "alias": "Herb",
@@ -33,7 +34,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Arrowleaf",
-  "slug": "Arrowleaf"
+  "slug": "Arrowleaf",
+  "icon": "/icons/Arrowleaf.png"
  },
  {
   "alias": "Berry",
@@ -51,7 +53,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Blackberries",
-  "slug": "Blackberries"
+  "slug": "Blackberries",
+  "icon": "/icons/Blackberries.png"
  },
  {
   "alias": "Berry",
@@ -69,7 +72,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Blueberries",
-  "slug": "Blueberries"
+  "slug": "Blueberries",
+  "icon": "/icons/Blueberries.png"
  },
  {
   "alias": "Cat Food",
@@ -87,7 +91,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Canned Food requires the Can Opener to open it. Then it becomes Cat Food.",
   "name": "Canned Food",
-  "slug": "Canned_Food"
+  "slug": "Canned_Food",
+  "icon": "/icons/Canned_Food.png"
  },
  {
   "alias": "",
@@ -105,7 +110,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Cat Food",
-  "slug": "Cat_Food"
+  "slug": "Cat_Food",
+  "icon": "/icons/Cat_Food.png"
  },
  {
   "alias": "Herb",
@@ -123,7 +129,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Chicory",
-  "slug": "Chicory"
+  "slug": "Chicory",
+  "icon": "/icons/Chicory.png"
  },
  {
   "alias": "Cereal Box",
@@ -141,7 +148,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Hey you, crunch into something new. Tasty and fun to chew, its Crunchie Wunchie too! Hey you, come join the Crunchie Crew. Go get your bowl and spoon, and Crunchie Wunchies too!",
   "name": "Crunchie Wunchies",
-  "slug": "Crunchie_Wunchies"
+  "slug": "Crunchie_Wunchies",
+  "icon": "/icons/Crunchie_Wunchies.png"
  },
  {
   "alias": "Berry",
@@ -159,7 +167,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Devil's Club",
-  "slug": "Devil's_Club"
+  "slug": "Devil's_Club",
+  "icon": "/icons/Devil_s_Club.png"
  },
  {
   "alias": "",
@@ -177,7 +186,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Energy Bar",
-  "slug": "Energy_Bar"
+  "slug": "Energy_Bar",
+  "icon": "/icons/Energy_Bar.png"
  },
  {
   "alias": "",
@@ -195,7 +205,8 @@
   "storage": "Inventory 11 12",
   "summary": "",
   "name": "Energy Drink",
-  "slug": "Energy_Drink"
+  "slug": "Energy_Drink",
+  "icon": "/icons/Energy_Drink.png"
  },
  {
   "alias": "Herb Mix",
@@ -213,7 +224,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Energy Mix",
-  "slug": "Energy_Mix"
+  "slug": "Energy_Mix",
+  "icon": "/icons/Energy_Mix.png"
  },
  {
   "alias": "Herb Mix",
@@ -231,7 +243,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Energy Mix +",
-  "slug": "Energy_Mix_+"
+  "slug": "Energy_Mix_+",
+  "icon": "/icons/Energy_Mix.png"
  },
  {
   "alias": "Herb",
@@ -249,7 +262,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Fireweed is an herb useful for making Health Mix + and Energy Mix +.",
   "name": "Fireweed",
-  "slug": "Fireweed"
+  "slug": "Fireweed",
+  "icon": "/icons/Fireweed.png"
  },
  {
   "alias": "Raw Fish",
@@ -267,7 +281,8 @@
   "storage": "• Inventory  • Drying Rack",
   "summary": "title = Fish Raw image = Salmon.png 200px caption = alias = Raw Fish obtained = Hunting type = Consumables#RFish Meats id = 436 stack = 3 added = Updates Early Access release health = stamina = energy = hydration = fullness = 50% poison = spoil = Yes cook = Yes effects = items = ing = consumable = Yes equippable = Yes storage = • Inventory  • Prefab Buildings/Drying Rack Drying Rack used = • Cooking#Kelvin Special Kelvin Special  • Cooking#Kitchen Sink Kitchen Sink  • Cooking#Lumberjack Juice Lumberjack Juice",
   "name": "Fish",
-  "slug": "Fish"
+  "slug": "Fish",
+  "icon": "/icons/Fish.png"
  },
  {
   "alias": "Mushroom",
@@ -285,7 +300,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Fly Amanita",
-  "slug": "Fly_Amanita"
+  "slug": "Fly_Amanita",
+  "icon": "/icons/Fly_Amanita.png"
  },
  {
   "alias": "Berry",
@@ -303,7 +319,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Guarana Berries",
-  "slug": "Guarana_Berries"
+  "slug": "Guarana_Berries",
+  "icon": "/icons/Guarana_Berries.png"
  },
  {
   "alias": "Herb Mix",
@@ -321,7 +338,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Health Mix",
-  "slug": "Health_Mix"
+  "slug": "Health_Mix",
+  "icon": "/icons/Health_Mix.png"
  },
  {
   "alias": "Herb Mix",
@@ -339,7 +357,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Health Mix +",
-  "slug": "Health_Mix_+"
+  "slug": "Health_Mix_+",
+  "icon": "/icons/Health_Mix.png"
  },
  {
   "alias": "Herb",
@@ -357,7 +376,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Horsetail",
-  "slug": "Horsetail"
+  "slug": "Horsetail",
+  "icon": "/icons/Horsetail.png"
  },
  {
   "alias": "Mushroom",
@@ -375,7 +395,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Hydnum Repandum",
-  "slug": "Hydnum_Repandum"
+  "slug": "Hydnum_Repandum",
+  "icon": "/icons/Hydnum_Repandum.png"
  },
  {
   "alias": "Mushroom",
@@ -393,7 +414,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "King Oyster",
-  "slug": "King_Oyster"
+  "slug": "King_Oyster",
+  "icon": "/icons/King_Oyster.png"
  },
  {
   "alias": "Raw Meat",
@@ -411,7 +433,8 @@
   "storage": "• Inventory  • Drying Rack",
   "summary": "Meat comes from a variety of places. Killing most type of Fauna will give you a number of pieces of meat and other items.",
   "name": "Meat",
-  "slug": "Meat"
+  "slug": "Meat",
+  "icon": "/icons/Meat.png"
  },
  {
   "alias": "Meat Chunks",
@@ -429,7 +452,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "title = Bacon Bites image = Meat Bite Icon.png caption = alias = Meat Chunks obtained = Collecting type = Consumables#BaBites Meats id = 571 stack = 10 added = Updates Early Access release health = stamina = energy = hydration = fullness = 1% poison = spoil = No cook = No effects = items = ing = consumable = Yes equippable = Yes storage = • Inventory  • Prefab Buildings/Shelf Shelf  • Prefab Buildings/Wall Shelf Wall Shelf used =",
   "name": "Meat Bites",
-  "slug": "Meat_Bites"
+  "slug": "Meat_Bites",
+  "icon": "/icons/Meat_Bites.png"
  },
  {
   "alias": "",
@@ -447,7 +471,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Meds",
-  "slug": "Meds"
+  "slug": "Meds",
+  "icon": "/icons/Meds.png"
  },
  {
   "alias": "",
@@ -465,7 +490,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "MRE Pack",
-  "slug": "MRE_Pack"
+  "slug": "MRE_Pack",
+  "icon": "/icons/MRE_Pack.png"
  },
  {
   "alias": "",
@@ -483,7 +509,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Oysters can be found on the shore near the ocean, and occasionally in Skin Pouches.",
   "name": "Oyster",
-  "slug": "Oyster"
+  "slug": "Oyster",
+  "icon": "/icons/Oyster.png"
  },
  {
   "alias": "Instant Noodles",
@@ -501,7 +528,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Ramen Noodles",
-  "slug": "Ramen_Noodles"
+  "slug": "Ramen_Noodles",
+  "icon": "/icons/Ramen_Noodles.png"
  },
  {
   "alias": "Berry",
@@ -519,7 +547,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Salmonberries",
-  "slug": "Salmonberries"
+  "slug": "Salmonberries",
+  "icon": "/icons/Salmonberries.png"
  },
  {
   "alias": "Mushroom",
@@ -537,7 +566,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Shiitake",
-  "slug": "Shiitake"
+  "slug": "Shiitake",
+  "icon": "/icons/Shiitake.png"
  },
  {
   "alias": "Berry",
@@ -555,7 +585,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Snowberries",
-  "slug": "Snowberries"
+  "slug": "Snowberries",
+  "icon": "/icons/Snowberries.png"
  },
  {
   "alias": "",
@@ -573,7 +604,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Turtle eggs can be found by going to a beach and following a Sea Turtle. When it stops to lay eggs, the player must wait until it is finished, then collect the eggs.",
   "name": "Turtle Egg",
-  "slug": "Turtle_Egg"
+  "slug": "Turtle_Egg",
+  "icon": "/icons/Turtle_Egg.png"
  },
  {
   "alias": "Berry",
@@ -591,7 +623,8 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Twinberries",
-  "slug": "Twinberries"
+  "slug": "Twinberries",
+  "icon": "/icons/Twinberries.png"
  },
  {
   "alias": "Herb",
@@ -609,6 +642,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Yarrow",
-  "slug": "Yarrow"
+  "slug": "Yarrow",
+  "icon": "/icons/Yarrow.png"
  }
 ]

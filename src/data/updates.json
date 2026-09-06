@@ -1,0 +1,17 @@
+[
+  {
+    "date": "2026-09-06",
+    "text": "Item icons added across the database",
+    "href": "/weapons/"
+  },
+  {
+    "date": "2026-09-06",
+    "text": "Weapon damage and charged-attack rankings refreshed",
+    "href": "/rankings/"
+  },
+  {
+    "date": "2026-09-06",
+    "text": "Food planner now totals all four nutrition stats",
+    "href": "/calculator/"
+  }
+]
