@@ -1,0 +1,87 @@
+---
+import Base from "../layouts/Base.astro";
+import weapons from "../data/weapons.json";
+import consumables from "../data/consumables.json";
+
+const num = (v: unknown): number => {
+  const n = parseFloat(String(v ?? "").replace("%", "").trim());
+  return Number.isFinite(n) ? n : 0;
+};
+
+const topWeapons = [...weapons]
+  .filter((w) => num(w.damageStandard) > 0)
+  .sort((a, b) => num(b.damageCharged || b.damageStandard) - num(a.damageCharged || a.damageStandard))
+  .slice(0, 15);
+
+const topFood = [...consumables]
+  .filter((c) => num(c.fullness) > 0)
+  .sort((a, b) => num(b.fullness) - num(a.fullness))
+  .slice(0, 15);
+
+const topEnergy = [...consumables]
+  .filter((c) => num(c.energy) > 0 || num(c.stamina) > 0)
+  .sort((a, b) => num(b.energy) + num(b.stamina) - (num(a.energy) + num(a.stamina)))
+  .slice(0, 10);
+---
+
+<Base
+  title="Sons of the Forest Rankings — Best Weapons & Food"
+  description="Answer-first rankings for Sons of the Forest: highest damage weapons, most filling food and best energy items. Numbers at a glance."
+>
+  <h1>Rankings</h1>
+  <p class="muted">The short answers, no digging.</p>
+
+  <h2 id="weapons">Best weapons by damage</h2>
+  <p class="muted">Sorted by charged damage — the number that matters in a fight.</p>
+  <table>
+    <thead><tr><th>#</th><th>Weapon</th><th>Speed</th><th>Damage</th><th>Charged</th><th>Block</th></tr></thead>
+    <tbody>
+      {topWeapons.map((w, i) => (
+        <tr>
+          <td>{i + 1}</td>
+          <td><a href={`/weapons/${w.slug}/`}>{w.name}</a></td>
+          <td>{w.speed || "—"}</td>
+          <td>{num(w.damageStandard)}</td>
+          <td><strong>{num(w.damageCharged) || "—"}</strong></td>
+          <td>{w.block || "—"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p><a href="/weapons/">See all {weapons.length} weapons →</a></p>
+
+  <h2 id="food">Most filling food</h2>
+  <table>
+    <thead><tr><th>#</th><th>Food</th><th>Fullness</th><th>Health</th><th>Hydration</th></tr></thead>
+    <tbody>
+      {topFood.map((c, i) => (
+        <tr>
+          <td>{i + 1}</td>
+          <td><a href={`/consumables/${c.slug}/`}>{c.name}</a></td>
+          <td><strong>{c.fullness || "—"}</strong></td>
+          <td>{c.health || "—"}</td>
+          <td>{c.hydration || "—"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p><a href="/consumables/">See all {consumables.length} consumables →</a></p>
+
+  <h2 id="energy">Best energy & stamina items</h2>
+  <table>
+    <thead><tr><th>#</th><th>Item</th><th>Energy</th><th>Stamina</th></tr></thead>
+    <tbody>
+      {topEnergy.map((c, i) => (
+        <tr>
+          <td>{i + 1}</td>
+          <td><a href={`/consumables/${c.slug}/`}>{c.name}</a></td>
+          <td><strong>{c.energy || "—"}</strong></td>
+          <td>{c.stamina || "—"}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h2>Plan your meals</h2>
+  <p>Use the <a href="/calculator/">food planner</a> to total fullness, hydration and energy across everything you're carrying.</p>
+</Base>

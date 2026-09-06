@@ -1,0 +1,109 @@
+---
+import Base from "../layouts/Base.astro";
+import consumables from "../data/consumables.json";
+
+const items = consumables
+  .map((c) => ({
+    name: c.name,
+    slug: c.slug,
+    health: parseFloat(String(c.health || "0").replace("%", "")) || 0,
+    fullness: parseFloat(String(c.fullness || "0").replace("%", "")) || 0,
+    hydration: parseFloat(String(c.hydration || "0").replace("%", "")) || 0,
+    energy: parseFloat(String(c.energy || "0").replace("%", "")) || 0,
+    stamina: parseFloat(String(c.stamina || "0").replace("%", "")) || 0,
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<Base
+  title="Sons of the Forest Food Planner — Total Fullness, Hydration & Energy"
+  description="Pick the food and drinks you're carrying and see the combined fullness, hydration, energy and health restore. Free Sons of the Forest tool."
+>
+  <h1>Food Planner</h1>
+  <p class="muted">
+    Tick the consumables you plan to carry or eat. The totals update as you pick — plan a trip without wasting inventory slots.
+  </p>
+
+  <div class="planner">
+    <div class="pick">
+      <input id="q" type="text" placeholder="Filter food..." />
+      <div id="list" class="list">
+        {items.map((it) => (
+          <label class="row">
+            <input type="checkbox" data-name={it.name} data-health={it.health} data-fullness={it.fullness} data-hydration={it.hydration} data-energy={it.energy} data-stamina={it.stamina} />
+            <span class="n">{it.name}</span>
+            <span class="v">
+              {[
+                it.health ? `+${it.health}% HP` : "",
+                it.fullness ? `+${it.fullness}% food` : "",
+                it.hydration ? `+${it.hydration}% water` : "",
+                it.energy ? `+${it.energy}% energy` : "",
+                it.stamina ? `+${it.stamina}% stamina` : "",
+              ].filter(Boolean).join(", ") || "—"}
+            </span>
+          </label>
+        ))}
+      </div>
+    </div>
+
+    <aside class="totals">
+      <h2>Totals</h2>
+      <div class="t"><span>Food (fullness)</span><strong id="t-fullness">0%</strong></div>
+      <div class="t"><span>Water (hydration)</span><strong id="t-hydration">0%</strong></div>
+      <div class="t"><span>Energy</span><strong id="t-energy">0%</strong></div>
+      <div class="t"><span>Stamina</span><strong id="t-stamina">0%</strong></div>
+      <div class="t"><span>Health restore</span><strong id="t-health">0%</strong></div>
+      <p class="muted small">Percentages of the respective bars. Click again to remove an item.</p>
+      <button id="clear" type="button">Clear all</button>
+    </aside>
+  </div>
+
+  <script>
+    const boxes = Array.from(document.querySelectorAll('#list input[type="checkbox"]'));
+    const q = document.getElementById("q") as HTMLInputElement;
+    const ids: Record<string, string> = {
+      fullness: "t-fullness",
+      hydration: "t-hydration",
+      energy: "t-energy",
+      stamina: "t-stamina",
+      health: "t-health",
+    };
+    function update() {
+      const totals: Record<string, number> = { fullness: 0, hydration: 0, energy: 0, stamina: 0, health: 0 };
+      boxes.forEach((b) => {
+        if (!(b as HTMLInputElement).checked) return;
+        for (const k of Object.keys(totals)) totals[k] += parseFloat(b.getAttribute(`data-${k}`) || "0");
+      });
+      for (const [k, id] of Object.entries(ids)) {
+        document.getElementById(id)!.textContent = `${Math.round(totals[k] * 10) / 10}%`;
+      }
+    }
+    boxes.forEach((b) => b.addEventListener("change", update));
+    q?.addEventListener("input", () => {
+      const s = q.value.toLowerCase();
+      document.querySelectorAll("#list .row").forEach((r) => {
+        const n = (r.querySelector(".n") as HTMLElement).textContent!.toLowerCase();
+        (r as HTMLElement).style.display = n.includes(s) ? "" : "none";
+      });
+    });
+    document.getElementById("clear")?.addEventListener("click", () => {
+      boxes.forEach((b) => ((b as HTMLInputElement).checked = false));
+      update();
+    });
+  </script>
+
+  <style>
+    .planner { display: grid; grid-template-columns: 1.6fr 1fr; gap: 1rem; align-items: start; }
+    .list { max-height: 520px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
+    .row { display: flex; gap: 0.6rem; align-items: baseline; padding: 0.4rem 0.7rem; border-bottom: 1px solid var(--border); cursor: pointer; }
+    .row:last-child { border-bottom: none; }
+    .row:hover { background: var(--bg-soft); }
+    .row .n { min-width: 9rem; font-weight: 600; }
+    .row .v { color: var(--muted); font-size: 0.83rem; }
+    .totals { position: sticky; top: 4.5rem; }
+    .t { display: flex; justify-content: space-between; border-left: 3px solid var(--accent-2); padding-left: 0.75rem; margin: 0.6rem 0; }
+    .t strong { font-size: 1.15rem; }
+    .small { font-size: 0.82rem; }
+    @media (max-width: 800px) { .planner { grid-template-columns: 1fr; } }
+  </style>
+</Base>
