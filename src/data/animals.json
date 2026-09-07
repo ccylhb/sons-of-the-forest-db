@@ -8,8 +8,7 @@
   "loot": "Feathers",
   "summary": "Birds are found almost everywhere around the forest of the Island, except during winter. Birds also seem to like landing on log structures or certain pre-fabricated structures such as the skull headlamps of the Advanced Log Sled. When killed, birds will yield feathers. The player may strike its corpse up to two more times to obtain more, albeit with a diminishing number of feathers.",
   "name": "Bird",
-  "slug": "Bird",
-  "icon": ""
+  "slug": "Bird"
  },
  {
   "alias": "",
@@ -20,8 +19,7 @@
   "loot": "Meat x1Animal Hides x2Head Trophy x1",
   "summary": "",
   "name": "Deer",
-  "slug": "Deer",
-  "icon": "/icons/Deer.png"
+  "slug": "Deer"
  },
  {
   "alias": "",
@@ -32,8 +30,7 @@
   "loot": "Meat x1FeathersHead Trophy x1",
   "summary": "",
   "name": "Duck",
-  "slug": "Duck",
-  "icon": "/icons/Duck.png"
+  "slug": "Duck"
  },
  {
   "alias": "",
@@ -44,8 +41,7 @@
   "loot": "Meat x1FeathersHead Trophy x1",
   "summary": "",
   "name": "Eagle",
-  "slug": "Eagle",
-  "icon": "/icons/Eagle.png"
+  "slug": "Eagle"
  },
  {
   "alias": "",
@@ -56,8 +52,7 @@
   "loot": "Feathers",
   "summary": "",
   "name": "Hummingbird",
-  "slug": "Hummingbird",
-  "icon": "/icons/Hummingbird.png"
+  "slug": "Hummingbird"
  },
  {
   "alias": "",
@@ -68,8 +63,7 @@
   "loot": "None",
   "summary": "",
   "name": "Killer Whale",
-  "slug": "Killer_Whale",
-  "icon": "/icons/Killer_Whale.png"
+  "slug": "Killer_Whale"
  },
  {
   "alias": "",
@@ -80,8 +74,7 @@
   "loot": "Meat x4Animal Hides x2Head Trophyx1",
   "summary": "Moose appear in relatively small, localized territories around the Island. Moose are much less frightful than other animals, allowing players to approach them with more proximity. However, if the player gets too close or attacks the moose, it will immediately run away. Tailing a chasing moose is an extremely difficult, if not impossible task in wooded areas. Additionally, if a moose is attacked or aggravated, it may use its hind legs to kick down the player before running away. The Moose can kick players off the Knight V and out of Golf Carts. For these reasons, hunting a moose can be difficul",
   "name": "Moose",
-  "slug": "Moose",
-  "icon": "/icons/Moose.png"
+  "slug": "Moose"
  },
  {
   "alias": "",
@@ -92,8 +85,7 @@
   "loot": "Meat x1Head Trophy x1",
   "summary": "Rabbits may appear with either brown, black or white fur; black and brown-fured rabbits appear during the warmer months throughout the woods while white-fured rabbits appear during winter or in the higher parts of the map, covered in eternal snow. However, skinning a rabbit will always give a brown Head Trophy regardless of the color.",
   "name": "Rabbit",
-  "slug": "Rabbit",
-  "icon": "/icons/Rabbit.png"
+  "slug": "Rabbit"
  },
  {
   "alias": "",
@@ -104,8 +96,7 @@
   "loot": "Meat x2 Head Trophy x1",
   "summary": "The raccoon is a wild animal commonly found in the forest. They are small and harmless, posing no threat to the player, and will flee from them as other passive animals in the game. When encountered face to face, they'll often stand on two legs with their arms spread open, and start running after a couple seconds.",
   "name": "Raccoon",
-  "slug": "Raccoon",
-  "icon": "/icons/Raccoon.png"
+  "slug": "Raccoon"
  },
  {
   "alias": "",
@@ -116,8 +107,7 @@
   "loot": "Itself",
   "summary": "",
   "name": "Salmon",
-  "slug": "Salmon",
-  "icon": "/icons/Salmon.png"
+  "slug": "Salmon"
  },
  {
   "alias": "",
@@ -128,8 +118,7 @@
   "loot": "Turtle Shell x1Meat x2Turtle EggsHead Trophy x1",
   "summary": "Sea Turtles only appear in a handful of locations on the beaches of the Island, and almost exclusively during the summer, making them one of the rarest animals of the game. When killed, its shell can be harvested by skinning it, being the only natural way to obtain one. Sea Turtles are usually seen swimming in shallow waters along the shoreline but, occasionally, they may crawl to the beach and begin digging the sand with their hind flipper, preparing to lay a batch of eggs. Collecting turtle eggs should be done swiftly after laying, as they will hatch in only a short period of time. When a tu",
   "name": "Sea Turtle",
-  "slug": "Sea_Turtle",
-  "icon": "/icons/Sea_Turtle.png"
+  "slug": "Sea_Turtle"
  },
  {
   "alias": "",
@@ -140,8 +129,7 @@
   "loot": "Meat x1FeathersHead Trophy x1",
   "summary": "Seagulls spawn in the beach areas of The Island, where they can be spotted in the air and on the ground.",
   "name": "Seagull",
-  "slug": "Seagull",
-  "icon": "/icons/Seagull.png"
+  "slug": "Seagull"
  },
  {
   "alias": "",
@@ -152,8 +140,7 @@
   "loot": "None",
   "summary": "They bear resemblance to great white sharks but with slightly longer secondary dorsal fin and exaggerated pelvic and pectoral fins. Coupling these features with their many scars gives them a more savage appearance.",
   "name": "Shark",
-  "slug": "Shark",
-  "icon": "/icons/Shark.png"
+  "slug": "Shark"
  },
  {
   "alias": "",
@@ -164,8 +151,7 @@
   "loot": "Meat x1Head Trophy x1",
   "summary": "",
   "name": "Skunk",
-  "slug": "Skunk",
-  "icon": "/icons/Skunk.png"
+  "slug": "Skunk"
  },
  {
   "alias": "",
@@ -176,7 +162,6 @@
   "loot": "Meat x1Head Trophy x1",
   "summary": "",
   "name": "Squirrel",
-  "slug": "Squirrel",
-  "icon": "/icons/Squirrel.png"
+  "slug": "Squirrel"
  }
 ]
