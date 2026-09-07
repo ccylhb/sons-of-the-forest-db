@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import animals from "../../data/animals.json";
 
+import Related from "../../components/Related.astro";
 export function getStaticPaths() {
   return animals.map((a) => ({
     params: { slug: a.slug },
@@ -71,4 +72,14 @@ const desc =
     about: { "@type": "Thing", name: animal.name },
     isPartOf: { "@type": "WebSite", name: "TimberDB" },
   })} />
+
+
+  <Related
+    heading="Next steps"
+    links={[
+
+    { href: "/rankings/", title: "Rankings", sub: "Damage, hunger and energy leaders ranked", tool: true },
+    { href: "/calculator/", title: "Food Planner", sub: "Build balanced meals for full health & stamina", tool: true },
+  ]}
+  />
 </Base>
