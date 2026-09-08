@@ -18,8 +18,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The is a basic in that you can craft pretty early on. It's made from a skull, stick and rope. The club is mainly good for defense since it has solid blocking power, but its attack speed is a bit slow compared to other weapons.",
-  "icon": "/icons/Crafted_Club.png"
+  "summary": "The is a basic in that you can craft pretty early on. It's made from a skull, stick and rope. The club is mainly good for defense since it has solid blocking power, but its attack speed is a bit slow compared to other weapons."
  },
  {
   "name": "Crafted Spear",
@@ -40,8 +39,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Crafting",
-  "summary": "The in is a versatile and . It's crafted early in the game using , , and the Utility Knife. It’s effective for both stabbing enemies up close and throwing at targets from a distance. You can carry up to 5 spears at once, making it a handy weapon for hunting and survival.",
-  "icon": "/icons/Crafted_Spear.png"
+  "summary": "The in is a versatile and . It's crafted early in the game using , , and the Utility Knife. It’s effective for both stabbing enemies up close and throwing at targets from a distance. You can carry up to 5 spears at once, making it a handy weapon for hunting and survival."
  },
  {
   "name": "Guitar",
@@ -62,8 +60,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The Guitar in is a you can find in the . While it's fun to swing around, it's more of a novelty item than a serious weapon, as it has low damage and no blocking capabilities. However, one cool feature is that you can play a random tune when using the block button.",
-  "icon": "/icons/Guitar.png"
+  "summary": "The Guitar in is a you can find in the . While it's fun to swing around, it's more of a novelty item than a serious weapon, as it has low damage and no blocking capabilities. However, one cool feature is that you can play a random tune when using the block button."
  },
  {
   "name": "Katana",
@@ -84,8 +81,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a fast, powerful that stands out for its speed and precision. It's highly sought after due to its ability significant damage with rapid strikes, making it ideal for taking on enemies quickly. The Katana can be found in on the eastern side of the island, and obtaining it requires the .",
-  "icon": "/icons/Katana.png"
+  "summary": "The in is a fast, powerful that stands out for its speed and precision. It's highly sought after due to its ability significant damage with rapid strikes, making it ideal for taking on enemies quickly. The Katana can be found in on the eastern side of the island, and obtaining it requires the ."
  },
  {
   "name": "Machete",
@@ -106,8 +102,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a versatile , known for its fast attack speed and moderate damage. It's a reliable choice for players looking to deal quick hits while maintaining a balance between offense and defense. You can find it early in the game on a beach located on the northern coast of the island, within the campsite with tents and deflated dinghies.",
-  "icon": "/icons/Machete.png"
+  "summary": "The in is a versatile , known for its fast attack speed and moderate damage. It's a reliable choice for players looking to deal quick hits while maintaining a balance between offense and defense. You can find it early in the game on a beach located on the northern coast of the island, within the campsite with tents and deflated dinghies."
  },
  {
   "name": "Putter",
@@ -128,8 +123,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a novelty that doubles as a golf club. It has very low damage and isn’t ideal for combat, but it’s fun to use in-game to putt golf balls. You can find the Putter in the or around the Golf Course area on the island.",
-  "icon": "/icons/Putter.png"
+  "summary": "The in is a novelty that doubles as a golf club. It has very low damage and isn’t ideal for combat, but it’s fun to use in-game to putt golf balls. You can find the Putter in the or around the Golf Course area on the island."
  },
  {
   "name": "Stun Baton",
@@ -150,8 +144,7 @@
   "capacity": "|ammo = Batteries",
   "added": "Early Access release",
   "alias": "|obtained = Collected",
-  "summary": "The Stun Baton in is a unique that delivers electrical shocks to enemies, temporarily paralyzing them. It requires one Battery to function for shock attacks. You can find it near a small waterfall north of the , stuck in a pile of skulls.",
-  "icon": "/icons/Stun_Baton.png"
+  "summary": "The Stun Baton in is a unique that delivers electrical shocks to enemies, temporarily paralyzing them. It requires one Battery to function for shock attacks. You can find it near a small waterfall north of the , stuck in a pile of skulls."
  },
  {
   "name": "Firefighter Axe",
@@ -172,8 +165,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a powerful that excels in dealing heavy damage but has a slower swing speed. It is also a great for chopping down trees quicker than with the Tactical Axe but slower with higher damage output than the Modern Axe. It’s found in , which is located on the northwest side of the island. You’ll need the Shovel to access the bunker.",
-  "icon": "/icons/Firefighter_Axe.png"
+  "summary": "The in is a powerful that excels in dealing heavy damage but has a slower swing speed. It is also a great for chopping down trees quicker than with the Tactical Axe but slower with higher damage output than the Modern Axe. It’s found in , which is located on the northwest side of the island. You’ll need the Shovel to access the bunker."
  },
  {
   "name": "Modern Axe",
@@ -194,8 +186,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a powerful and an efficient for chopping down trees. It deals high damage but has a slower swing weapons. You can find it at a small campsite located southwest of , embedded in a corpse next to a tent. This axe is perfect for both combat and gathering, making it a valuable asset early in the game.",
-  "icon": "/icons/Modern_Axe.png"
+  "summary": "The in is a powerful and an efficient for chopping down trees. It deals high damage but has a slower swing weapons. You can find it at a small campsite located southwest of , embedded in a corpse next to a tent. This axe is perfect for both combat and gathering, making it a valuable asset early in the game."
  },
  {
   "name": "Tactical Axe",
@@ -216,8 +207,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "Starter Axe",
-  "summary": "The functions as both a melee weapon and a general-purpose survival tool. It can be used immediately after being obtained and requires no ammunition, fuel, or other consumable resource. Its relatively fast handling makes it suitable for repeated attacks and smaller woodcutting tasks, while its ability to block and parry allows it to remain useful as an early defensive weapon.",
-  "icon": "/icons/Tactical_Axe.png"
+  "summary": "The functions as both a melee weapon and a general-purpose survival tool. It can be used immediately after being obtained and requires no ammunition, fuel, or other consumable resource. Its relatively fast handling makes it suitable for repeated attacks and smaller woodcutting tasks, while its ability to block and parry allows it to remain useful as an early defensive weapon."
  },
  {
   "name": "Utility Knife",
@@ -238,8 +228,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a tool and , available right from the start when you open the Emergency Pack. While not ideal for combat due to its low damage, the knife is essential for crafting and other actions like skinning.",
-  "icon": "/icons/Utility_Knife.png"
+  "summary": "The in is a tool and , available right from the start when you open the Emergency Pack. While not ideal for combat due to its low damage, the knife is essential for crafting and other actions like skinning."
  },
  {
   "name": "Cross",
@@ -260,8 +249,7 @@
   "capacity": "|ammo =",
   "added": "Early Access release",
   "alias": "Crucifix",
-  "summary": "The in is a unique that can be used to repel and burn demons. Found in the , the Cross is an essential item for combatting supernatural enemies in the late game. While it has no damage value against normal enemies like cannibals, it is highly effective against demons.",
-  "icon": "/icons/Cross.png"
+  "summary": "The in is a unique that can be used to repel and burn demons. Found in the , the Cross is an essential item for combatting supernatural enemies in the late game. While it has no damage value against normal enemies like cannibals, it is highly effective against demons."
  },
  {
   "name": "Crossbow",
@@ -282,8 +270,7 @@
   "capacity": "1",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a powerful that delivers high damage at a slow firing rate. It’s a silent and deadly tool for eliminating enemies from a distance. The Crossbow is located in the in the northwest of the island. To access the Crossbow, you’ll need the to unlock the doors inside the bunker.",
-  "icon": "/icons/Crossbow.png"
+  "summary": "The in is a powerful that delivers high damage at a slow firing rate. It’s a silent and deadly tool for eliminating enemies from a distance. The Crossbow is located in the in the northwest of the island. To access the Crossbow, you’ll need the to unlock the doors inside the bunker."
  },
  {
   "name": "Compound Bow",
@@ -304,8 +291,7 @@
   "capacity": "1",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a powerful that delivers high damage and precise shots. It is located in , which requires the Shovel to access. The Compound Bow is more accurate and deals more damage than the Crafted Bow, making it a superior choice for ranged combat.",
-  "icon": "/icons/Compound_Bow.png"
+  "summary": "The in is a powerful that delivers high damage and precise shots. It is located in , which requires the Shovel to access. The Compound Bow is more accurate and deals more damage than the Crafted Bow, making it a superior choice for ranged combat."
  },
  {
   "name": "Crafted Bow",
@@ -326,8 +312,7 @@
   "capacity": "1",
   "added": "Early Access release",
   "alias": "|obtained = Crafting",
-  "summary": "The in is a basic , ideal for early-game hunting and combat. It’s crafted from easily obtainable materials, making it one of the first ranged weapons to make.",
-  "icon": "/icons/Crafted_Bow.png"
+  "summary": "The in is a basic , ideal for early-game hunting and combat. It’s crafted from easily obtainable materials, making it one of the first ranged weapons to make."
  },
  {
   "name": "Pistol",
@@ -348,8 +333,7 @@
   "capacity": "12",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a compact semi-automatic pistol and a versatile that fires 9mm ammunition. It's found floating in an orange life raft off the western coast of the island. The Pistol is a reliable medium-range weapon, effective in combat but has limited , so it’s essential to conserve shots for tougher enemies.",
-  "icon": "/icons/Pistol.png"
+  "summary": "The in is a compact semi-automatic pistol and a versatile that fires 9mm ammunition. It's found floating in an orange life raft off the western coast of the island. The Pistol is a reliable medium-range weapon, effective in combat but has limited , so it’s essential to conserve shots for tougher enemies."
  },
  {
   "name": "Revolver",
@@ -370,8 +354,7 @@
   "capacity": "6 rounds",
   "added": "Early Access release",
   "alias": "|obtained = Found",
-  "summary": "The in is a powerful that uses 9mm ammo and holds six rounds per reload. It’s located in the bunker, which can be accessed by using the Shovel at the dig site marked by two broken golf carts. The Revolver deals high damage and is a great choice for mid-to-late game combat situations.",
-  "icon": "/icons/Revolver.png"
+  "summary": "The in is a powerful that uses 9mm ammo and holds six rounds per reload. It’s located in the bunker, which can be accessed by using the Shovel at the dig site marked by two broken golf carts. The Revolver deals high damage and is a great choice for mid-to-late game combat situations."
  },
  {
   "name": "Rifle",
@@ -392,8 +375,7 @@
   "capacity": "4 rounds",
   "added": "Patch 07",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a powerful added in Patch 07. This bolt-action rifle uses Rifle Ammo and comes with a built-in red-dot scope, offering high accuracy for long-range combat. You can find it in the via the large lake Grotto (grotto D) on the eastern side of the island, near a large lake.",
-  "icon": "/icons/Rifle.png"
+  "summary": "The in is a powerful added in Patch 07. This bolt-action rifle uses Rifle Ammo and comes with a built-in red-dot scope, offering high accuracy for long-range combat. You can find it in the via the large lake Grotto (grotto D) on the eastern side of the island, near a large lake."
  },
  {
   "name": "Shotgun",
@@ -414,8 +396,7 @@
   "capacity": "8 rounds",
   "added": "Early Access release",
   "alias": "|obtained = Found",
-  "summary": "The in is a powerful that can be loaded with two types of ammo: Buckshot Ammo and Slug Ammo. It’s located in a grave marked with a purple GPS locator in the northwestern part of the island. You’ll need the Shovel to dig it up. The Shotgun is highly effective at close range, especially with buckshot ammo.",
-  "icon": "/icons/Shotgun.png"
+  "summary": "The in is a powerful that can be loaded with two types of ammo: Buckshot Ammo and Slug Ammo. It’s located in a grave marked with a purple GPS locator in the northwestern part of the island. You’ll need the Shovel to dig it up. The Shotgun is highly effective at close range, especially with buckshot ammo."
  },
  {
   "name": "Slingshot",
@@ -436,8 +417,7 @@
   "capacity": "1",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is an early-game that can be found near the entrance to the Shovel Cave. It is located on the body of a middle impaled operative just outside the . The Slingshot uses Small Rocks or Golf Balls as ammunition, both of which are easily found around the island.",
-  "icon": "/icons/Slingshot.png"
+  "summary": "The in is an early-game that can be found near the entrance to the Shovel Cave. It is located on the body of a middle impaled operative just outside the . The Slingshot uses Small Rocks or Golf Balls as ammunition, both of which are easily found around the island."
  },
  {
   "name": "Stun Gun",
@@ -458,8 +438,7 @@
   "capacity": "1 pcs",
   "added": "Early Access release",
   "alias": "|obtained = Found",
-  "summary": "The in is a specialized that temporarily paralyzes enemies with electrical charges. It’s located in the northern coastal , shared with the Rebreather. Found on the body of a maintenance worker hanging from the ceiling, the Stun Gun is a great tool for disabling enemies from a short distance.",
-  "icon": "/icons/Stun_Gun.png"
+  "summary": "The in is a specialized that temporarily paralyzes enemies with electrical charges. It’s located in the northern coastal , shared with the Rebreather. Found on the body of a maintenance worker hanging from the ceiling, the Stun Gun is a great tool for disabling enemies from a short distance."
  },
  {
   "name": "Flashlight Attachment",
@@ -480,8 +459,7 @@
   "capacity": "",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a that can be fitted onto firearms such as the Pistol, Shotgun, and Crossbow. It allows you to illuminate your surroundings while wielding a weapon, which is especially useful during nighttime or cave exploration. The is found in the and .",
-  "icon": "/icons/Flashlight_Attachment.png"
+  "summary": "The in is a that can be fitted onto firearms such as the Pistol, Shotgun, and Crossbow. It allows you to illuminate your surroundings while wielding a weapon, which is especially useful during nighttime or cave exploration. The is found in the and ."
  },
  {
   "name": "Laser Sight",
@@ -502,8 +480,7 @@
   "capacity": "",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a that enhances accuracy by projecting a laser beam to indicate where shots will land. It can be attached to the Pistol, Shotgun, and Crossbow once you’ve equipped a rail on the respective weapon. The Laser Sight is found in , and you'll need the Shovel to access the bunker.",
-  "icon": "/icons/Laser_Sight.png"
+  "summary": "The in is a that enhances accuracy by projecting a laser beam to indicate where shots will land. It can be attached to the Pistol, Shotgun, and Crossbow once you’ve equipped a rail on the respective weapon. The Laser Sight is found in , and you'll need the Shovel to access the bunker."
  },
  {
   "name": "Pistol Rail",
@@ -524,8 +501,7 @@
   "capacity": "",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a that allows you to mount other like the Flashlight Attachment or Laser Sight onto your Pistol. The Pistol Rail is found in the on the northwest side of the island, requiring the Shovel to access the area.",
-  "icon": "/icons/Pistol_Rail.png"
+  "summary": "The in is a that allows you to mount other like the Flashlight Attachment or Laser Sight onto your Pistol. The Pistol Rail is found in the on the northwest side of the island, requiring the Shovel to access the area."
  },
  {
   "name": "Shotgun Rail",
@@ -546,8 +522,7 @@
   "capacity": "",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a that allows players to mount accessories like the Flashlight Attachment or Laser Sight onto their Shotgun. This rail is found on the northern beach of the island, near deflated rubber boats, or in the .",
-  "icon": "/icons/Shotgun_Rail.png"
+  "summary": "The in is a that allows players to mount accessories like the Flashlight Attachment or Laser Sight onto their Shotgun. This rail is found on the northern beach of the island, near deflated rubber boats, or in the ."
  },
  {
   "name": "Silencer",
@@ -568,8 +543,7 @@
   "capacity": "",
   "added": "Early Access release",
   "alias": "|obtained = Collecting",
-  "summary": "The in is a designed to reduce the sound of gunfire from the Pistol. This allows for stealthier gameplay by preventing noise from alerting nearby enemies. The Silencer can be found in the on the southwest side of the island. You will need the Shovel to access this bunker.",
-  "icon": "/icons/Silencer.png"
+  "summary": "The in is a designed to reduce the sound of gunfire from the Pistol. This allows for stealthier gameplay by preventing noise from alerting nearby enemies. The Silencer can be found in the on the southwest side of the island. You will need the Shovel to access this bunker."
  },
  {
   "name": "Grenade",
@@ -582,16 +556,7 @@
   "damageDownward": "—",
   "amount": "5",
   "gameId": "381",
-  "solafite": true,
-  "obtained": "Collecting",
-  "location": "|map =",
-  "block": "|capacity =",
-  "ammo": "|attachment =",
-  "capacity": "|ammo =",
-  "added": "Early Access release",
-  "alias": "|obtained = Collecting",
-  "summary": "The in is a powerful that deals significant area damage. It can be found in various locations, such as caves, military crates, and Villages. The Grenade is an essential tool for crowd control and destroying obstacles, but it is limited in supply, so use it wisely.",
-  "icon": "/icons/Grenade.png"
+  "solafite": true
  },
  {
   "name": "Molotov",
@@ -604,16 +569,7 @@
   "damageDownward": "—",
   "amount": "6",
   "gameId": "388",
-  "solafite": true,
-  "obtained": "Crafting",
-  "location": "|map =",
-  "block": "|capacity =",
-  "ammo": "|attachment =",
-  "capacity": "|ammo =",
-  "added": "Early Access release",
-  "alias": "|obtained = Crafting",
-  "summary": "The in is a crafted weapon made using Vodka Bottle and Cloth. When ignited and thrown, it creates an area of fire that damages enemies over time, making it effective for crowd control or targeting groups of enemies. It’s a versatile weapon that can also be used to illuminate dark areas as it’s brighter than the Lighter.",
-  "icon": "/icons/Molotov.png"
+  "solafite": true
  },
  {
   "name": "Sticky Bomb",
@@ -626,15 +582,6 @@
   "damageDownward": "—",
   "amount": "3",
   "gameId": "417",
-  "solafite": true,
-  "obtained": "Crafting",
-  "location": "|map =",
-  "block": "|capacity =",
-  "ammo": "|attachment =",
-  "capacity": "|ammo =",
-  "added": "Early Access release",
-  "alias": "|obtained = Crafting",
-  "summary": "The in is a powerful that sticks to surfaces or enemies, allowing for precise targeting. It’s crafted using C4 Brick, Circuit Board, Duct Tape, Wire, Watch, and Coins. The Sticky Bomb is highly effective for dealing with tough enemies like the Sluggy or for destroying structures.",
-  "icon": "/icons/Sticky_Bomb.png"
+  "solafite": true
  }
 ]

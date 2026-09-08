@@ -12,6 +12,7 @@ import time
 
 from shared import (
     OUT_DIR, get_wikitext, infobox_field, category_members, section_text, strip_templates, clean_ws,
+    intro_text,
 )
 
 OUT = OUT_DIR / "enemies.json"

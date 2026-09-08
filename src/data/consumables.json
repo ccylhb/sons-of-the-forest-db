@@ -484,41 +484,5 @@
   "summary": "Oysters can be found on the shore near the ocean, and occasionally in Skin Pouches.",
   "name": "Oyster",
   "slug": "Oyster"
- },
- {
-  "alias": "Instant Noodles",
-  "group": "Non-Perishables",
-  "obtained": "Collecting",
-  "id": "421",
-  "stack": "10",
-  "health": "",
-  "stamina": "",
-  "energy": "30%",
-  "hydration": "-25%",
-  "fullness": "25%",
-  "effects": "",
-  "spoil": "No",
-  "storage": "• Inventory  • Shelf  • Wall Shelf",
-  "summary": "",
-  "name": "Ramen Noodles",
-  "slug": "Ramen_Noodles"
- },
- {
-  "alias": "Berry",
-  "group": "Berries",
-  "obtained": "Collecting / Farming",
-  "id": "447",
-  "stack": "20",
-  "health": "",
-  "stamina": "",
-  "energy": "",
-  "hydration": "1%",
-  "fullness": "1%",
-  "effects": "",
-  "spoil": "No",
-  "storage": "• Inventory  • Shelf  • Wall Shelf",
-  "summary": "",
-  "name": "Salmonberries",
-  "slug": "Salmonberries"
  }
 ]

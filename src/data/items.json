@@ -278,33 +278,5 @@
   "location": "Yacht Good Times",
   "uses": "",
   "summary": ""
- },
- {
-  "name": "Printer Resin",
-  "slug": "Printer_Resin",
-  "alias": "",
-  "obtained": "Collecting",
-  "type": "Printer Resin 4",
-  "gameId": "390",
-  "stack": "1000 ml",
-  "consumable": "No",
-  "equippable": "No",
-  "location": "",
-  "uses": "• 3D Printed Arrow <br> • 3D Printed GPS Case <br> • Printed Grappling Hook <br> • Printed Flask <br> • Red Mask <br> • Tech Mesh <br> • Printed Sled",
-  "summary": ""
- },
- {
-  "name": "Rope",
-  "slug": "Rope",
-  "alias": "",
-  "obtained": "Collecting",
-  "type": "Rope 2",
-  "gameId": "403",
-  "stack": "10",
-  "consumable": "No",
-  "equippable": "Yes",
-  "location": "",
-  "uses": "• Look out Tower <br> • Tree Platform 1 <br> • Tree Platform 2 <br> • Tree Shelter 1 <br> • Ceiling Skull Lamp <br> • Bone Maker Trap <br> • Fly Swatter Trap <br> • Hokey Pokey Trap <br> • Rope Upgrades",
-  "summary": ""
  }
 ]
