@@ -11,7 +11,8 @@
   "equippable": "No",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Air_Tank.png"
  },
  {
   "name": "Album Cover",
@@ -25,7 +26,8 @@
   "equippable": "No",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Album_Cover.png"
  },
  {
   "name": "Animal Hide",
@@ -39,7 +41,8 @@
   "equippable": "No",
   "location": "",
   "uses": "Hide Armor",
-  "summary": "The Animal Hide in is a versatile 2 obtained from hunting Deer and Moose. It serves as an essential resource for creating 4, and some blueprints from Prefab Buildings need it as well, making it a valuable material for decorating the base."
+  "summary": "The Animal Hide in is a versatile 2 obtained from hunting Deer and Moose. It serves as an essential resource for creating 4, and some blueprints from Prefab Buildings need it as well, making it a valuable material for decorating the base.",
+  "icon": "/icons/Animal_Hide.png"
  },
  {
   "name": "Arm",
@@ -53,7 +56,8 @@
   "equippable": "Yes",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Arm.png"
  },
  {
   "name": "Artifact",
@@ -67,7 +71,8 @@
   "equippable": "Yes",
   "location": "1",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Artifact.png"
  },
  {
   "name": "Batteries",
@@ -81,7 +86,8 @@
   "equippable": "No",
   "location": "",
   "uses": "Explosive Type Arrows Shock Type Arrows Tech Armor",
-  "summary": "The Batteries in are a crucial power source used to operate various electronic devices. They are essential for maintaining high-tech equipment, making them a valuable resource for exploration and survival."
+  "summary": "The Batteries in are a crucial power source used to operate various electronic devices. They are essential for maintaining high-tech equipment, making them a valuable resource for exploration and survival.",
+  "icon": "/icons/Batteries.png"
  },
  {
   "name": "Bone",
@@ -95,7 +101,8 @@
   "equippable": "Yes",
   "location": "",
   "uses": "Bone Armor",
-  "summary": "The Bone in is a versatile resource primarily used for crafting Bone Armor, and construction materials. Obtained from burning bodies or looting, it serves as a durable component for enhancing defense and survival capabilities."
+  "summary": "The Bone in is a versatile resource primarily used for crafting Bone Armor, and construction materials. Obtained from burning bodies or looting, it serves as a durable component for enhancing defense and survival capabilities.",
+  "icon": "/icons/Bone.png"
  },
  {
   "name": "C4 Brick",
@@ -109,7 +116,8 @@
   "equippable": "No",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/C4_Brick.png"
  },
  {
   "name": "Cash",
@@ -123,7 +131,8 @@
   "equippable": "No",
   "location": "",
   "uses": "Fuel the Campfires",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Cash.png"
  },
  {
   "name": "Circuit Board",
@@ -137,7 +146,8 @@
   "equippable": "No",
   "location": "",
   "uses": "Sticky Bomb GPS Locator Tech Armor Explosive Type Arrows Shock Type Arrows",
-  "summary": "The Circuit Board in is an essential electronic component used for crafting advanced technology and explosive devices. Found primarily in abandoned equipment and electronic wreckage, it is a crucial resource for creating powerful tools."
+  "summary": "The Circuit Board in is an essential electronic component used for crafting advanced technology and explosive devices. Found primarily in abandoned equipment and electronic wreckage, it is a crucial resource for creating powerful tools.",
+  "icon": "/icons/Circuit_Board.png"
  },
  {
   "name": "Cloth",
@@ -151,7 +161,8 @@
   "equippable": "Yes",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Cloth.png"
  },
  {
   "name": "Coins",
@@ -165,7 +176,8 @@
   "equippable": "No",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Coins.png"
  },
  {
   "name": "Duct Tape",
@@ -179,7 +191,8 @@
   "equippable": "No",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Duct_Tape.png"
  },
  {
   "name": "Feather",
@@ -193,7 +206,8 @@
   "equippable": "No",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Feather.png"
  },
  {
   "name": "Golf Cart Battery",
@@ -207,7 +221,8 @@
   "equippable": "Yes",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Golf_Cart_Battery.png"
  },
  {
   "name": "Hoodie",
@@ -221,7 +236,8 @@
   "equippable": "Yes",
   "location": "Village",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Hoodie.png"
  },
  {
   "name": "Leather Jacket",
@@ -235,7 +251,8 @@
   "equippable": "Yes",
   "location": "Plane Runway",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Leather_Jacket.png"
  },
  {
   "name": "Leg",
@@ -249,7 +266,8 @@
   "equippable": "Yes",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Leg.png"
  },
  {
   "name": "Log",
@@ -263,7 +281,8 @@
   "equippable": "Yes",
   "location": "",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Log.png"
  },
  {
   "name": "Pajamas",
@@ -277,6 +296,112 @@
   "equippable": "Yes",
   "location": "Yacht Good Times",
   "uses": "",
-  "summary": ""
+  "summary": "",
+  "icon": "/icons/Pajamas.png"
+ },
+ {
+  "name": "Printer Resin",
+  "slug": "Printer_Resin",
+  "alias": "",
+  "obtained": "Collecting",
+  "type": "Printer Resin 4",
+  "gameId": "390",
+  "stack": "1000 ml",
+  "consumable": "No",
+  "equippable": "No",
+  "location": "",
+  "uses": "• 3D Printed Arrow <br> • 3D Printed GPS Case <br> • Printed Grappling Hook <br> • Printed Flask <br> • Red Mask <br> • Tech Mesh <br> • Printed Sled",
+  "summary": "",
+  "icon": "/icons/Printer_Resin.png"
+ },
+ {
+  "name": "Rope",
+  "slug": "Rope",
+  "alias": "",
+  "obtained": "Collecting",
+  "type": "Rope 2",
+  "gameId": "403",
+  "stack": "10",
+  "consumable": "No",
+  "equippable": "Yes",
+  "location": "",
+  "uses": "• Look out Tower <br> • Tree Platform 1 <br> • Tree Platform 2 <br> • Tree Shelter 1 <br> • Ceiling Skull Lamp <br> • Bone Maker Trap <br> • Fly Swatter Trap <br> • Hokey Pokey Trap <br> • Rope Upgrades",
+  "summary": "",
+  "icon": "/icons/Rope.png"
+ },
+ {
+  "name": "Skin Pouch",
+  "slug": "Skin_Pouch",
+  "alias": "Loot Pouch",
+  "obtained": "",
+  "type": "",
+  "gameId": "",
+  "stack": "",
+  "consumable": "",
+  "equippable": "",
+  "location": "",
+  "uses": "",
+  "summary": "A Skin Pouch can be placed on the crafting mat in the inventory and opened to reveal its contents. The items received are selected from a random loot pool. If the inventory is already at maximum capacity for one of the generated items, the pouch can still be opened. Items that cannot be stored are dropped when the crafting mat is cleared.",
+  "icon": "/icons/Skin_Pouch.png"
+ },
+ {
+  "name": "Vodka Bottle",
+  "slug": "Vodka_Bottle",
+  "alias": "",
+  "obtained": "Collecting",
+  "type": "Vodka Bottle 2",
+  "gameId": "414",
+  "stack": "6",
+  "consumable": "No",
+  "equippable": "No",
+  "location": "",
+  "uses": "Bone Maker Trap",
+  "summary": "",
+  "icon": "/icons/Vodka_Bottle.png"
+ },
+ {
+  "name": "Watch",
+  "slug": "Watch",
+  "alias": "",
+  "obtained": "Collecting",
+  "type": "Watch 2",
+  "gameId": "410",
+  "stack": "10",
+  "consumable": "No",
+  "equippable": "No",
+  "location": "",
+  "uses": "",
+  "summary": "",
+  "icon": "/icons/Watch.png"
+ },
+ {
+  "name": "Wetsuit",
+  "slug": "Wetsuit",
+  "alias": "",
+  "obtained": "Collecting",
+  "type": "For Player",
+  "gameId": "619",
+  "stack": "1",
+  "consumable": "No",
+  "equippable": "Yes",
+  "location": "3",
+  "uses": "Swimming",
+  "summary": "",
+  "icon": "/icons/Wetsuit.png"
+ },
+ {
+  "name": "Wire",
+  "slug": "Wire",
+  "alias": "",
+  "obtained": "Collecting",
+  "type": "Wire 2",
+  "gameId": "418",
+  "stack": "100",
+  "consumable": "No",
+  "equippable": "Yes",
+  "location": "",
+  "uses": "• Spring Trap <br> • Light Bulb <br> • Solar Panel",
+  "summary": "",
+  "icon": "/icons/Wire.png"
  }
 ]
