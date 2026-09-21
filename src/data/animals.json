@@ -9,7 +9,7 @@
   "summary": "Birds are found almost everywhere around the forest of the Island, except during winter. Birds also seem to like landing on log structures or certain pre-fabricated structures such as the skull headlamps of the Advanced Log Sled. When killed, birds will yield feathers. The player may strike its corpse up to two more times to obtain more, albeit with a diminishing number of feathers.",
   "name": "Bird",
   "slug": "Bird",
-  "icon": ""
+  "icon": "/icons/Bird.png"
  },
  {
   "alias": "",

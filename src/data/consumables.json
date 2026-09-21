@@ -92,7 +92,7 @@
   "summary": "Boiled Meat is a cooked consumable in prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Strength bonus.",
   "name": "Boiled Meat",
   "slug": "Boiled_Meat",
-  "icon": ""
+  "icon": "/icons/Boiled_Meat.png"
  },
  {
   "alias": "Cat Food",
@@ -149,7 +149,7 @@
   "summary": "Chicken Noodle Soup is a cooked consumable in prepared using a Cooking Pot. It restores health, hydration, and fullness while providing temporary Warmth and Relax bonuses.",
   "name": "Chicken Noodle Soup",
   "slug": "Chicken_Noodle_Soup",
-  "icon": ""
+  "icon": "/icons/Chicken_Noodle_Soup.png"
  },
  {
   "alias": "Herb",
@@ -206,7 +206,7 @@
   "summary": "Cooked Ramen Noodles is a cooked consumable in prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Warmth bonus.",
   "name": "Cooked Ramen Noodles",
   "slug": "Cooked_Ramen_Noodles",
-  "icon": ""
+  "icon": "/icons/Cooked_Ramen_Noodles.png"
  },
  {
   "alias": "",
@@ -225,7 +225,7 @@
   "summary": "Cream of Mushroom is a cooked consumable in prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Stealth bonus.",
   "name": "Cream of Mushroom",
   "slug": "Cream_of_Mushroom",
-  "icon": ""
+  "icon": "/icons/Cream_of_Mushroom.png"
  },
  {
   "alias": "Cereal Box",
@@ -282,7 +282,7 @@
   "summary": "Egg Nog is a cooked consumable in prepared using a Cooking Pot. It restores hydration and fullness while providing strong temporary Warmth and Relax bonuses.",
   "name": "Egg Nog",
   "slug": "Egg_Nog",
-  "icon": ""
+  "icon": "/icons/Egg_Nog.png"
  },
  {
   "alias": "",
@@ -605,7 +605,7 @@
   "summary": "Kitchen Sink is a cooked consumable in prepared using a Cooking Pot. It combines a wide variety of ingredients into a single meal that restores multiple survival stats.",
   "name": "Kitchen Sink",
   "slug": "Kitchen_Sink",
-  "icon": ""
+  "icon": "/icons/Kitchen_Sink.png"
  },
  {
   "alias": "",
@@ -624,7 +624,7 @@
   "summary": "Liquid Battery is a cooked consumable in prepared using a Cooking Pot. It fully restores stamina, energy, and hydration while also providing a temporary Strength bonus.",
   "name": "Liquid Battery",
   "slug": "Liquid_Battery",
-  "icon": ""
+  "icon": "/icons/Liquid_Battery.png"
  },
  {
   "alias": "",
@@ -643,7 +643,7 @@
   "summary": "Lumberjack Juice is a cooked consumable in prepared using a Cooking Pot. It is designed around wood-gathering utility, combining substantial survival-stat restoration with temporary Strength and Lumberjack bonuses.",
   "name": "Lumberjack Juice",
   "slug": "Lumberjack_Juice",
-  "icon": ""
+  "icon": "/icons/Lumberjack_Juice.png"
  },
  {
   "alias": "Raw Meat",
@@ -757,7 +757,7 @@
   "summary": "Protein Shake is a cooked consumable in prepared using a Cooking Pot. It combines several different food and medicinal ingredients with substantial survival-stat restoration and temporary Strength and Lumberjack bonuses.",
   "name": "Protein Shake",
   "slug": "Protein_Shake",
-  "icon": ""
+  "icon": "/icons/Protein_Shake.png"
  },
  {
   "alias": "Instant Noodles",

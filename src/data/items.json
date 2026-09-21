@@ -345,6 +345,21 @@
   "icon": "/icons/Skin_Pouch.png"
  },
  {
+  "name": "Solafite",
+  "slug": "Solafite",
+  "alias": "",
+  "obtained": "Mining / Collecting",
+  "type": "Solafite 3",
+  "gameId": "664",
+  "stack": "20",
+  "consumable": "No",
+  "equippable": "Yes",
+  "location": "Mainly Caves",
+  "uses": "Solafite Plating",
+  "summary": "Solafite is used by several late-game equipment and structure systems. Its primary uses are: * Plating compatible weapons and tools using the Weapon Plater. * Converting Bone Armor into Solafite Armor using the Armor Plater. * Plating the Ancient Armor as part of late-game progression. * Powering the Repel Shrine.",
+  "icon": "/icons/Solafite.png"
+ },
+ {
   "name": "Vodka Bottle",
   "slug": "Vodka_Bottle",
   "alias": "",
