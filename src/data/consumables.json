@@ -15,8 +15,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Aloe Vera",
-  "slug": "Aloe_Vera",
-  "icon": "/icons/Aloe_Vera.png"
+  "slug": "Aloe_Vera"
  },
  {
   "alias": "Herb",
@@ -34,8 +33,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Arrowleaf",
-  "slug": "Arrowleaf",
-  "icon": "/icons/Arrowleaf.png"
+  "slug": "Arrowleaf"
  },
  {
   "alias": "Berry",
@@ -53,8 +51,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Blackberries",
-  "slug": "Blackberries",
-  "icon": "/icons/Blackberries.png"
+  "slug": "Blackberries"
  },
  {
   "alias": "Berry",
@@ -72,8 +69,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Blueberries",
-  "slug": "Blueberries",
-  "icon": "/icons/Blueberries.png"
+  "slug": "Blueberries"
  },
  {
   "alias": "",
@@ -89,10 +85,9 @@
   "effects": "Strength Attribute 2x",
   "spoil": "Yes",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Boiled Meat is a cooked consumable in prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Strength bonus.",
+  "summary": "Boiled Meat is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Strength bonus.",
   "name": "Boiled Meat",
-  "slug": "Boiled_Meat",
-  "icon": "/icons/Boiled_Meat.png"
+  "slug": "Boiled_Meat"
  },
  {
   "alias": "Cat Food",
@@ -110,8 +105,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Canned Food requires the Can Opener to open it. Then it becomes Cat Food.",
   "name": "Canned Food",
-  "slug": "Canned_Food",
-  "icon": "/icons/Canned_Food.png"
+  "slug": "Canned_Food"
  },
  {
   "alias": "",
@@ -129,8 +123,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Cat Food",
-  "slug": "Cat_Food",
-  "icon": "/icons/Cat_Food.png"
+  "slug": "Cat_Food"
  },
  {
   "alias": "",
@@ -146,10 +139,9 @@
   "effects": "• Warmth Attribute 1x <br> • Relax Attribute 1x",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Chicken Noodle Soup is a cooked consumable in prepared using a Cooking Pot. It restores health, hydration, and fullness while providing temporary Warmth and Relax bonuses.",
+  "summary": "Chicken Noodle Soup is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It restores health, hydration, and fullness while providing temporary Warmth and Relax bonuses.",
   "name": "Chicken Noodle Soup",
-  "slug": "Chicken_Noodle_Soup",
-  "icon": "/icons/Chicken_Noodle_Soup.png"
+  "slug": "Chicken_Noodle_Soup"
  },
  {
   "alias": "Herb",
@@ -167,8 +159,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Chicory",
-  "slug": "Chicory",
-  "icon": "/icons/Chicory.png"
+  "slug": "Chicory"
  },
  {
   "alias": "Boiled Water",
@@ -184,10 +175,9 @@
   "effects": "",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Clean Water, also known as Boiled Water, is a consumable in . It can be produced by boiling water in a Cooking Pot or collected naturally using a Rain Catcher. Clean Water fully restores hydration and is also used as the base for other cooking recipes.",
+  "summary": "Clean Water, also known as Boiled Water, is a consumable in Sons of the Forest. It can be produced by boiling water in a Cooking Pot or collected naturally using a Rain Catcher. Clean Water fully restores hydration and is also used as the base for other cooking recipes.",
   "name": "Clean Water",
-  "slug": "Clean_Water",
-  "icon": ""
+  "slug": "Clean_Water"
  },
  {
   "alias": "",
@@ -203,10 +193,9 @@
   "effects": "Warmth Attribute 1x",
   "spoil": "Yes",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Cooked Ramen Noodles is a cooked consumable in prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Warmth bonus.",
+  "summary": "Cooked Ramen Noodles is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Warmth bonus.",
   "name": "Cooked Ramen Noodles",
-  "slug": "Cooked_Ramen_Noodles",
-  "icon": "/icons/Cooked_Ramen_Noodles.png"
+  "slug": "Cooked_Ramen_Noodles"
  },
  {
   "alias": "",
@@ -222,10 +211,9 @@
   "effects": "Stealth Attribute 1x",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Cream of Mushroom is a cooked consumable in prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Stealth bonus.",
+  "summary": "Cream of Mushroom is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It restores health, hydration, and fullness while also providing a temporary Stealth bonus.",
   "name": "Cream of Mushroom",
-  "slug": "Cream_of_Mushroom",
-  "icon": "/icons/Cream_of_Mushroom.png"
+  "slug": "Cream_of_Mushroom"
  },
  {
   "alias": "Cereal Box",
@@ -243,8 +231,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Hey you, crunch into something new. Tasty and fun to chew, its Crunchie Wunchie too! Hey you, come join the Crunchie Crew. Go get your bowl and spoon, and Crunchie Wunchies too!",
   "name": "Crunchie Wunchies",
-  "slug": "Crunchie_Wunchies",
-  "icon": "/icons/Crunchie_Wunchies.png"
+  "slug": "Crunchie_Wunchies"
  },
  {
   "alias": "Berry",
@@ -262,8 +249,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Devil's Club",
-  "slug": "Devil's_Club",
-  "icon": "/icons/Devil_s_Club.png"
+  "slug": "Devil's_Club"
  },
  {
   "alias": "",
@@ -279,10 +265,9 @@
   "effects": "• Warmth Attribute 3x <br> • Relax Attribute 2x",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Egg Nog is a cooked consumable in prepared using a Cooking Pot. It restores hydration and fullness while providing strong temporary Warmth and Relax bonuses.",
+  "summary": "Egg Nog is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It restores hydration and fullness while providing strong temporary Warmth and Relax bonuses.",
   "name": "Egg Nog",
-  "slug": "Egg_Nog",
-  "icon": "/icons/Egg_Nog.png"
+  "slug": "Egg_Nog"
  },
  {
   "alias": "",
@@ -300,8 +285,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Energy Bar",
-  "slug": "Energy_Bar",
-  "icon": "/icons/Energy_Bar.png"
+  "slug": "Energy_Bar"
  },
  {
   "alias": "",
@@ -319,8 +303,7 @@
   "storage": "Inventory 11 12",
   "summary": "",
   "name": "Energy Drink",
-  "slug": "Energy_Drink",
-  "icon": "/icons/Energy_Drink.png"
+  "slug": "Energy_Drink"
  },
  {
   "alias": "Herb Mix",
@@ -338,8 +321,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Energy Mix",
-  "slug": "Energy_Mix",
-  "icon": "/icons/Energy_Mix.png"
+  "slug": "Energy_Mix"
  },
  {
   "alias": "Herb Mix",
@@ -357,8 +339,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Energy Mix +",
-  "slug": "Energy_Mix_+",
-  "icon": "/icons/Energy_Mix.png"
+  "slug": "Energy_Mix_+"
  },
  {
   "alias": "Herb",
@@ -376,8 +357,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Fireweed is an herb useful for making Health Mix + and Energy Mix +.",
   "name": "Fireweed",
-  "slug": "Fireweed",
-  "icon": "/icons/Fireweed.png"
+  "slug": "Fireweed"
  },
  {
   "alias": "Raw Fish",
@@ -395,8 +375,7 @@
   "storage": "• Inventory  • Drying Rack",
   "summary": "title = Fish Raw image = Salmon.png 200px caption = alias = Raw Fish obtained = Hunting type = Consumables#RFish Meats id = 436 stack = 3 added = Updates Early Access release health = stamina = energy = hydration = fullness = 50% poison = spoil = Yes cook = Yes effects = items = ing = consumable = Yes equippable = Yes storage = • Inventory  • Prefab Buildings/Drying Rack Drying Rack used = • Cooking#Kelvin Special Kelvin Special  • Cooking#Kitchen Sink Kitchen Sink  • Cooking#Lumberjack Juice Lumberjack Juice",
   "name": "Fish",
-  "slug": "Fish",
-  "icon": "/icons/Fish.png"
+  "slug": "Fish"
  },
  {
   "alias": "Mushroom",
@@ -414,8 +393,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Fly Amanita",
-  "slug": "Fly_Amanita",
-  "icon": "/icons/Fly_Amanita.png"
+  "slug": "Fly_Amanita"
  },
  {
   "alias": "",
@@ -431,10 +409,9 @@
   "effects": "• Stealth Attribute 1x <br> • Strength Attribute 2x <br> • Lumberjack Attribute 2x",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Greg is a cooked consumable in prepared using a Cooking Pot. It is made from severed human body parts and combines substantial survival-stat restoration with several temporary attributes.",
+  "summary": "Greg is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It is made from severed human body parts and combines substantial survival-stat restoration with several temporary attributes.",
   "name": "Greg",
-  "slug": "Greg",
-  "icon": "/icons/Greg.png"
+  "slug": "Greg"
  },
  {
   "alias": "Berry",
@@ -452,8 +429,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Guarana Berries",
-  "slug": "Guarana_Berries",
-  "icon": "/icons/Guarana_Berries.png"
+  "slug": "Guarana_Berries"
  },
  {
   "alias": "Herb Mix",
@@ -471,8 +447,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Health Mix",
-  "slug": "Health_Mix",
-  "icon": "/icons/Health_Mix.png"
+  "slug": "Health_Mix"
  },
  {
   "alias": "Herb Mix",
@@ -490,8 +465,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Health Mix +",
-  "slug": "Health_Mix_+",
-  "icon": "/icons/Health_Mix.png"
+  "slug": "Health_Mix_+"
  },
  {
   "alias": "Herb",
@@ -509,8 +483,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Horsetail",
-  "slug": "Horsetail",
-  "icon": "/icons/Horsetail.png"
+  "slug": "Horsetail"
  },
  {
   "alias": "Mushroom",
@@ -528,8 +501,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Hydnum Repandum",
-  "slug": "Hydnum_Repandum",
-  "icon": "/icons/Hydnum_Repandum.png"
+  "slug": "Hydnum_Repandum"
  },
  {
   "alias": "",
@@ -545,10 +517,9 @@
   "effects": "• Warmth Attribute 2x <br> • Relax Attribute 2x",
   "spoil": "Yes",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Jam is a cooked consumable in prepared using a Cooking Pot. It restores hydration and fullness while providing temporary Warmth and Relax bonuses.",
+  "summary": "Jam is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It restores hydration and fullness while providing temporary Warmth and Relax bonuses.",
   "name": "Jam",
-  "slug": "Jam",
-  "icon": ""
+  "slug": "Jam"
  },
  {
   "alias": "",
@@ -564,10 +535,9 @@
   "effects": "Lumberjack Attribute 1x",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Kelvin Special is a cooked consumable in prepared using a Cooking Pot. It is a fish-based meal that provides substantial survival-stat restoration together with a temporary Lumberjack bonus.",
+  "summary": "Kelvin Special is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It is a fish-based meal that provides substantial survival-stat restoration together with a temporary Lumberjack bonus.",
   "name": "Kelvin Special",
-  "slug": "Kelvin_Special",
-  "icon": ""
+  "slug": "Kelvin_Special"
  },
  {
   "alias": "Mushroom",
@@ -585,8 +555,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "King Oyster",
-  "slug": "King_Oyster",
-  "icon": "/icons/King_Oyster.png"
+  "slug": "King_Oyster"
  },
  {
   "alias": "",
@@ -602,10 +571,9 @@
   "effects": "",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Kitchen Sink is a cooked consumable in prepared using a Cooking Pot. It combines a wide variety of ingredients into a single meal that restores multiple survival stats.",
+  "summary": "Kitchen Sink is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It combines a wide variety of ingredients into a single meal that restores multiple survival stats.",
   "name": "Kitchen Sink",
-  "slug": "Kitchen_Sink",
-  "icon": "/icons/Kitchen_Sink.png"
+  "slug": "Kitchen_Sink"
  },
  {
   "alias": "",
@@ -621,10 +589,9 @@
   "effects": "Strength Attribute 2x",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Liquid Battery is a cooked consumable in prepared using a Cooking Pot. It fully restores stamina, energy, and hydration while also providing a temporary Strength bonus.",
+  "summary": "Liquid Battery is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It fully restores stamina, energy, and hydration while also providing a temporary Strength bonus.",
   "name": "Liquid Battery",
-  "slug": "Liquid_Battery",
-  "icon": "/icons/Liquid_Battery.png"
+  "slug": "Liquid_Battery"
  },
  {
   "alias": "",
@@ -640,10 +607,9 @@
   "effects": "• Strength Attribute 1x <br> • Lumberjack Attribute 2x",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Lumberjack Juice is a cooked consumable in prepared using a Cooking Pot. It is designed around wood-gathering utility, combining substantial survival-stat restoration with temporary Strength and Lumberjack bonuses.",
+  "summary": "Lumberjack Juice is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It is designed around wood-gathering utility, combining substantial survival-stat restoration with temporary Strength and Lumberjack bonuses.",
   "name": "Lumberjack Juice",
-  "slug": "Lumberjack_Juice",
-  "icon": "/icons/Lumberjack_Juice.png"
+  "slug": "Lumberjack_Juice"
  },
  {
   "alias": "Raw Meat",
@@ -661,8 +627,7 @@
   "storage": "• Inventory  • Drying Rack",
   "summary": "Meat comes from a variety of places. Killing most type of Fauna will give you a number of pieces of meat and other items.",
   "name": "Meat",
-  "slug": "Meat",
-  "icon": "/icons/Meat.png"
+  "slug": "Meat"
  },
  {
   "alias": "Meat Chunks",
@@ -680,8 +645,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "title = Bacon Bites image = Meat Bite Icon.png caption = alias = Meat Chunks obtained = Collecting type = Consumables#BaBites Meats id = 571 stack = 10 added = Updates Early Access release health = stamina = energy = hydration = fullness = 1% poison = spoil = No cook = No effects = items = ing = consumable = Yes equippable = Yes storage = • Inventory  • Prefab Buildings/Shelf Shelf  • Prefab Buildings/Wall Shelf Wall Shelf used =",
   "name": "Meat Bites",
-  "slug": "Meat_Bites",
-  "icon": "/icons/Meat_Bites.png"
+  "slug": "Meat_Bites"
  },
  {
   "alias": "",
@@ -699,8 +663,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Meds",
-  "slug": "Meds",
-  "icon": "/icons/Meds.png"
+  "slug": "Meds"
  },
  {
   "alias": "",
@@ -718,8 +681,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "MRE Pack",
-  "slug": "MRE_Pack",
-  "icon": "/icons/MRE_Pack.png"
+  "slug": "MRE_Pack"
  },
  {
   "alias": "",
@@ -737,8 +699,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Oysters can be found on the shore near the ocean, and occasionally in Skin Pouches.",
   "name": "Oyster",
-  "slug": "Oyster",
-  "icon": "/icons/Oyster.png"
+  "slug": "Oyster"
  },
  {
   "alias": "",
@@ -754,10 +715,9 @@
   "effects": "• Strength Attribute 3x <br> • Lumberjack Attribute 1x",
   "spoil": "No",
   "storage": "Printed Flask Cooking Pot",
-  "summary": "Protein Shake is a cooked consumable in prepared using a Cooking Pot. It combines several different food and medicinal ingredients with substantial survival-stat restoration and temporary Strength and Lumberjack bonuses.",
+  "summary": "Protein Shake is a cooked consumable in Sons of the Forest prepared using a Cooking Pot. It combines several different food and medicinal ingredients with substantial survival-stat restoration and temporary Strength and Lumberjack bonuses.",
   "name": "Protein Shake",
-  "slug": "Protein_Shake",
-  "icon": "/icons/Protein_Shake.png"
+  "slug": "Protein_Shake"
  },
  {
   "alias": "Instant Noodles",
@@ -775,8 +735,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Ramen Noodles",
-  "slug": "Ramen_Noodles",
-  "icon": "/icons/Ramen_Noodles.png"
+  "slug": "Ramen_Noodles"
  },
  {
   "alias": "Berry",
@@ -794,8 +753,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Salmonberries",
-  "slug": "Salmonberries",
-  "icon": "/icons/Salmonberries.png"
+  "slug": "Salmonberries"
  },
  {
   "alias": "Mushroom",
@@ -813,8 +771,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Shiitake",
-  "slug": "Shiitake",
-  "icon": "/icons/Shiitake.png"
+  "slug": "Shiitake"
  },
  {
   "alias": "Berry",
@@ -832,8 +789,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Snowberries",
-  "slug": "Snowberries",
-  "icon": "/icons/Snowberries.png"
+  "slug": "Snowberries"
  },
  {
   "alias": "",
@@ -851,8 +807,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "Turtle eggs can be found by going to a beach and following a Sea Turtle. When it stops to lay eggs, the player must wait until it is finished, then collect the eggs.",
   "name": "Turtle Egg",
-  "slug": "Turtle_Egg",
-  "icon": "/icons/Turtle_Egg.png"
+  "slug": "Turtle_Egg"
  },
  {
   "alias": "Berry",
@@ -870,8 +825,7 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Twinberries",
-  "slug": "Twinberries",
-  "icon": "/icons/Twinberries.png"
+  "slug": "Twinberries"
  },
  {
   "alias": "Herb",
@@ -889,7 +843,6 @@
   "storage": "• Inventory  • Shelf  • Wall Shelf",
   "summary": "",
   "name": "Yarrow",
-  "slug": "Yarrow",
-  "icon": "/icons/Yarrow.png"
+  "slug": "Yarrow"
  }
 ]

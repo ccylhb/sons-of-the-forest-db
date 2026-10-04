@@ -25,6 +25,65 @@ session = requests.Session()
 session.proxies.update(PROXY)
 session.headers.update(HEADERS)
 
+# --- wiki 魔术字展开 ---------------------------------------------------------
+# strip_templates() 整段删 [[...]] 之外还会把 {{PAGENAME}} 等魔术字删空，
+# 正文出现 "The is a basic in that ..." 残句。必须在清洗前展开成真实文本。
+_MAGIC_TITLE = re.compile(r"\{\{\s*(?:SUB|BASE|FULL)?PAGENAME(?:E)?\s*\}\}", re.I)
+_MAGIC_GAME = re.compile(r"\{\{\s*(?:Gamename|Game|SITENAME|Sitename)\s*\}\}", re.I)
+_MAGIC_DROP = re.compile(
+    r"\{\{\s*(?:DISPLAYTITLE|DEFAULTSORT|#(?:expr|var|if|ifeq|ifexist|switch|tag|invoke|time|pos|len|replace|sub|explode|titleparts)[^}]*)\}\}",
+    re.I,
+)
+
+
+def expand_magic(wt: str | None, title: str) -> str | None:
+    """把 {{PAGENAME}} 换成条目名，丢弃解析器函数等元魔术字。"""
+    if not wt:
+        return wt
+    wt = _MAGIC_TITLE.sub(lambda _m: title, wt)
+    wt = _MAGIC_GAME.sub("Sons of the Forest", wt)
+    wt = _MAGIC_DROP.sub("", wt)
+    return wt
+
+
+# --- wiki.gg 工具模板展开 -----------------------------------------------------
+# wiki.gg 的 {{BT|X}} / {{WTL|n}} / {{Caves|n}} / {{Bunkers|n}} 用 #switch 把
+# 一个数字参数翻译成可读标签（{{WTL|3}} -> "Attachment"，{{Caves|3}} -> "Shovel
+# Cave"）。strip_templates() 的「丢弃纯数字参数」规则会把这些标签一并丢掉，
+# 留下 "The is found in the and ." 这类残句。必须在清洗前把语义还原出来。
+_WTL = {"1": "Melee", "2": "Ranged", "3": "Attachment", "4": "Explosives"}
+_CAVES = {"1": "Rebreather Cave", "2": "Rope Gun Cave", "3": "Shovel Cave",
+          "4": "Ancient Armor Cave", "5": "Pickaxe Cave", "6": "Artifact Cave",
+          "7": "Hell Cave"}
+_BUNKERS = {"1": "Food and Dining Bunker", "2": "Entertainment Bunker",
+            "3": "Residential Bunker", "4": "Luxury Bunker", "5": "Maintenance A",
+            "6": "Maintenance B", "7": "Maintenance C"}
+
+_UTIL_TPL = re.compile(r"\{\{\s*(BT|WTL|Caves|Bunkers)\s*\|([^{}]*?)\}\}", re.I)
+
+
+def expand_util_templates(wt: str | None) -> str | None:
+    """把 wiki.gg 工具模板还原成它渲染后的可读文字。"""
+    if not wt:
+        return wt
+
+    def _sub(m):
+        name = m.group(1).strip().lower()
+        parts = [p.strip() for p in m.group(2).split("|")]
+        if name == "bt":                       # {{BT|X}} -> X
+            return parts[0] if parts else ""
+        if name == "wtl":                      # {{WTL|n}} / {{WTL|n|label}}
+            if len(parts) >= 2 and parts[1]:
+                return parts[1]
+            return _WTL.get(parts[0] if parts else "", "Weapon")
+        mp = _CAVES if name == "caves" else _BUNKERS
+        if len(parts) >= 3 and parts[2]:       # {{{3|...}}} 显式标签优先
+            return parts[2]
+        key = parts[0] if parts else ""
+        return mp.get(key, ("Cave " if name == "caves" else "Bunker ") + key)
+
+    return _UTIL_TPL.sub(_sub, wt)
+
 
 def get_wikitext(title: str) -> str | None:
     for attempt in range(3):
@@ -36,7 +95,7 @@ def get_wikitext(title: str) -> str | None:
             )
             d = r.json()
             if "parse" in d:
-                return d["parse"]["wikitext"]["*"]
+                return expand_util_templates(expand_magic(d["parse"]["wikitext"]["*"], title))
             return None
         except Exception as e:
             print(f"  retry {title}: {e}")
@@ -49,9 +108,19 @@ def strip_templates(text: str) -> str:
     # remove ref/comment blocks
     text = re.sub(r"<ref[^>]*>.*?</ref>", "", text, flags=re.S)
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
-    # iteratively remove innermost {{...}}
+    # iteratively collapse innermost {{...}}: keep positional args as text
+    # ({{Item|Skull}} -> Skull) so material/type words survive instead of
+    # leaving "crafted using , , and the Utility Knife".
     while "{{" in text:
-        new = re.sub(r"\{\{[^{}]*\}\}", "", text)
+        def repl(m):
+            parts = m.group(1).split("|")
+            # 只保留可读的位置参数；纯数字/符号参数是模板编号，保留会变成
+            # "a basic 1 melee weapon" 这类数字垃圾。
+            args = [p.strip() for p in parts[1:]
+                    if p.strip() and not re.fullmatch(r"[\d\s.,%+\-]+", p.strip())]
+            return " ".join(args)
+
+        new = re.sub(r"\{\{([^{}]*)\}\}", repl, text)
         if new == text:
             break
         text = new

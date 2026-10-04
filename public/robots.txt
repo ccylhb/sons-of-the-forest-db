@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sons-of-the-forest-db.pages.dev/sitemap.xml
+Sitemap: https://sons.lootseer.com/sitemap.xml

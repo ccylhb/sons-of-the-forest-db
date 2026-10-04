@@ -11,8 +11,7 @@
   "weapon": "Charge<br>Swing",
   "summary": "The Armsy is a type of surface-dwelling mutant added in Patch 08 of Sons of the Forest",
   "name": "Armsy",
-  "slug": "Armsy",
-  "icon": "/icons/Armsy.png"
+  "slug": "Armsy"
  },
  {
   "alias": "",
@@ -26,8 +25,7 @@
   "weapon": "",
   "summary": "Barbara Puffton, along with Edward, serves as a mid-game boss in Sons of the Forest. In this encounter, she uses her speed and agility to perform hit-and-run attacks on the player, making her a formidable opponent. Barbara's primary move is a spin attack, which deals significant damage and requires the player to stay mobile and focused. The recommended strategy for defeating her involves using ranged weapons like a shotgun or pistol to keep a safe distance and aiming for headshots to maximize damage. Proper preparation, including wearing protective armor and carrying healing items, is crucial ",
   "name": "Barbara Puffton",
-  "slug": "Barbara_Puffton",
-  "icon": "/icons/Barbara_Puffton.png"
+  "slug": "Barbara_Puffton"
  },
  {
   "alias": "",
@@ -41,8 +39,7 @@
   "weapon": "Claw<br>Spin<br>Leap",
   "summary": "Blue Puffies are convered in verdigris stains and, in the dark, emit a dim blue light from underneath their skin. Additionally, they are slightly larger than regular Puffies, differenciating them amongst a group.",
   "name": "Blue Puffy",
-  "slug": "Blue_Puffy",
-  "icon": "/icons/Blue_Puffy.png"
+  "slug": "Blue_Puffy"
  },
  {
   "alias": "",
@@ -56,8 +53,7 @@
   "weapon": "",
   "summary": "Cannibals live in a primitive society organized in \"families\" (although what defines the composition of a cannibal family remains unclear). They dwell in small Villages dotted around the Island. Cannibals will wear primitive clothing such as loincloths and animal leather rags, but they can also be seen wearing worn off pieces of contemporary clothing, most likely taken from what remained of the human inhabitants of the Island. During the colder Seasons, Cannibals will wear more clothing as well as makeshift coats made of leather and various organs. Occasionally, Cannibal patrols may appear aro",
   "name": "Cannibals",
-  "slug": "Cannibals",
-  "icon": "/icons/Cannibals.png"
+  "slug": "Cannibals"
  },
  {
   "alias": "Caterpillars, Worm 2.0, CatDog Mutant",
@@ -71,8 +67,7 @@
   "weapon": "",
   "summary": "Caterpillars consists of what seems to be two people fused at the buttocks. They normally move by performing handsprings to throw each other's torso above the other, moving in a cartwheel fashion. When approaching a target or attacking, they may sometimes move by slithering onto the ground like a worm.",
   "name": "Caterpillar",
-  "slug": "Caterpillar",
-  "icon": "/icons/Caterpillar.png"
+  "slug": "Caterpillar"
  },
  {
   "alias": "",
@@ -86,8 +81,7 @@
   "weapon": "Leap<br>Kick",
   "summary": "Reprising their counterpart from The Forest, Creepy Virginias appear as a grotesque fusion of several female bodies into a single arachnid-like creature. They emit skittering noises like scorpions or snakes. Creepy Virginias are incredibly agile, thanks to their six claw-tipped legs, they are capable of great leaps allowing them to clear obstacles such as walls. However, their attacks are rather limited, seemingly only being capable of using two of their legs at a time to strike the player. This weakness will allow the player to easily skirt the Creepy Virginia. Category:Enemies Category:Mutan",
   "name": "Creepy Virginia",
-  "slug": "Creepy_Virginia",
-  "icon": "/icons/Creepy_Virginia.png"
+  "slug": "Creepy_Virginia"
  },
  {
   "alias": "",
@@ -101,8 +95,7 @@
   "weapon": "Claw<br>Legs",
   "summary": "The Demon is a spider-like creepy mutant found deep underground in some caves, and later on the surface. For the stronger and bigger variant, see Giant Demon.",
   "name": "Demon",
-  "slug": "Demon",
-  "icon": "/icons/Demon.png"
+  "slug": "Demon"
  },
  {
   "alias": "",
@@ -116,8 +109,7 @@
   "weapon": "",
   "summary": "Edward Puffton is the CEO of Puffcorp, who has been missing for 31 weeks at the time of the helicopter crash in Sons of the Forest. He is a multi-billionaire with an estimated net worth of $760+ billion and is known for his significant role in the storyline of the game. Edward, alongside his family, moved to the Island when Holosprings was opened to its first inhabitants.",
   "name": "Edward Puffton",
-  "slug": "Edward_Puffton",
-  "icon": "/icons/Edward_Puffton.png"
+  "slug": "Edward_Puffton"
  },
  {
   "alias": "Titan<br>Red Cannibal<br>Fat Female Cannibal",
@@ -131,8 +123,7 @@
   "weapon": "Leap<br>Kick",
   "summary": "Fat Cannibals can appear as either male of female, each with their own distinctive appearances and mannerisms. Males are covered head to toe in red body paint or blood, and will always appear completely naked, standing in an intimidating fashion. Female can either appear wearing a loincloth or a makeshift dress made of leather strips, and will usuall cower and exhibit an overall more anxious behavior. Regardless of their gender, Fat Cannibals both share the same move set.",
   "name": "Fat Cannibals",
-  "slug": "Fat_Cannibals",
-  "icon": "/icons/Fat_Cannibals.png"
+  "slug": "Fat_Cannibals"
  },
  {
   "alias": "Fingerman",
@@ -146,8 +137,7 @@
   "weapon": "Crafted Spear",
   "summary": "Fingers are mostly humanoid, although faceless and armless mutants who possess a massive maw extending across their torso, neck and head. They possess finger-like appendages around the maw which seemingly serve as teeth or body parts intended for eating prey.",
   "name": "Fingers",
-  "slug": "Fingers",
-  "icon": "/icons/Fingers.png"
+  "slug": "Fingers"
  },
  {
   "alias": "",
@@ -161,8 +151,7 @@
   "weapon": "Claw<br>Legs",
   "summary": "The Giant Demon is a spider-like creepy mutant found at the end of Hell Cave, and serves as a boss protecting the Cube.",
   "name": "Giant Demon",
-  "slug": "Giant_Demon",
-  "icon": "/icons/Giant_Demon.png"
+  "slug": "Giant_Demon"
  },
  {
   "alias": "",
@@ -176,8 +165,7 @@
   "weapon": "Strike<br>Kick",
   "summary": "As the name implies, Golden-Masked Cannibals wear a golden mask. They may appear as either a Regular Cannibal or as a Heavy.",
   "name": "Golden-Masked Cannibals",
-  "slug": "Golden-Masked_Cannibals",
-  "icon": "/icons/Golden_Masked_Cannibals.png"
+  "slug": "Golden-Masked_Cannibals"
  },
  {
   "alias": "Brute",
@@ -191,8 +179,7 @@
   "weapon": "Club<br>Kick",
   "summary": "Heavies are tall and hefty cannibals, lugging around either a large makeshift club made of a skull and a spine or, more rarely, a running outboard motor. They are heavily disfigured by some form of lesion or malformation leaving their mouth horribly mishappen and depriving them of a nose and their left eye. Although this could have originated from a birth defect or a severe injury, it is most likely that this malformation has occured from exposure to the Cube's effects. Heavies tend to more often appear as a Golden-Masked Cannibal, indicating their more dominant status in Cannibal families. If",
   "name": "Heavy Cannibals",
-  "slug": "Heavy_Cannibals",
-  "icon": "/icons/Heavy_Cannibals.png"
+  "slug": "Heavy_Cannibals"
  },
  {
   "alias": "",
@@ -206,8 +193,7 @@
   "weapon": "Charge <br> Leap <br> Swing",
   "summary": "Holeys appear as a towering, stocky mass of flesh covered in a multitude of orifices it seemingly uses to breathe, mounted on a set of three short, stocky legs. It produces guttural noises. Being able to inflict devastating damages to both the player and structures and possessing the largest health pool out of all of the regular enemies of the game, player should constantly keep an eye on them and observe for any telegraph of its leap and charge attacks. Attempting close-quarter combat with a Holey is generaly a risky move, as it can swing its whole body at the player and unexpectedly attempt ",
   "name": "Holey",
-  "slug": "Holey",
-  "icon": "/icons/Holey.png"
+  "slug": "Holey"
  },
  {
   "alias": "Mutant boss",
@@ -221,8 +207,7 @@
   "weapon": "Helicopter club<br>Leap<br>Mutant creation",
   "summary": "After discovering the cube, Jack Holt reaches the beach in order to escape the island. Jianyu bursts out of the ground and attacks the incoming helicopters, consuming the pilot of one. Jianyu then wields the helicopter like a giant club.",
   "name": "Jianyu Zhang (boss)",
-  "slug": "Jianyu_Zhang_(boss)",
-  "icon": ""
+  "slug": "Jianyu_Zhang_(boss)"
  },
  {
   "alias": "",
@@ -236,8 +221,7 @@
   "weapon": "Leap<br>Smash<br>Swing",
   "summary": "The Legsy appears as a tubular-shaped creature walking on fasciciles of fingers and hands. Its most prominent characteristic is the pair of stocky, muscular legs attached to its upper body, giving the impression is standing upside down on its \"hands\" rather than its feet. The Legsy is both capable of running on its fingers, as well as leaping a significant distance at its target, making it a tough enemy to evade or run from. When fighting at close range, the Legsy may attempt to smash the player with its whole body, or swing its legs at them, inflicting considerable damage and knocking down th",
   "name": "Legsy",
-  "slug": "Legsy",
-  "icon": "/icons/Legsy.png"
+  "slug": "Legsy"
  },
  {
   "alias": "",
@@ -251,8 +235,7 @@
   "weapon": "Claw<br>Leap",
   "summary": "Mr & Mrs Puffton are a duo of Puffies mutated from the late Edward and Barbara Puffton, still dressed in their worn out evening costumes. Unlike other Puffies, Mr & Mrs Puffton have kept most of their hair, preserving Edward and Barabara's recognizable hairdo. Mr & Mrs Puffton are significantly stronger, nimbler and faster than regular Puffies. Together, they are capable of keeping an excruciating pressure on the player, forcing them to constantly be on their toes. Their powerful punches and swipes can knock the player off their feet. Additionally, Mrs Puffton is able to perform a leap attack,",
   "name": "Mr & Mrs Puffton (boss)",
-  "slug": "Mr_&_Mrs_Puffton_(boss)",
-  "icon": "/icons/Mr_Mrs_Puffton_boss.png"
+  "slug": "Mr_&_Mrs_Puffton_(boss)"
  },
  {
   "alias": "Dirty Cannibals<br>Muddies<br>Mud Men",
@@ -266,8 +249,7 @@
   "weapon": "claw<br>stone",
   "summary": "Muddy Cannibals are emaciated, mud-caked cannibals wandering about the Island. They exhibit a neurotic, feral behavior, screaming and laughing maniacally and constantly crawling or running on all fours. They always appear completely naked and never carry any weapon. However, they may inexplicably drop a Skin Pouch upon being killed. Although difficult to visually identify male and female Muddy Cannibals, female are covered in a slightly lighter tone of mud than males. Muddy Cannibals are usually seen travelling in groups of two to six in a disorganised fashion, with no clear leader to direct t",
   "name": "Muddy Cannibals",
-  "slug": "Muddy_Cannibals",
-  "icon": "/icons/Muddy_Cannibals.png"
+  "slug": "Muddy_Cannibals"
  },
  {
   "alias": "Fetus",
@@ -281,8 +263,7 @@
   "weapon": "All weapons",
   "summary": "The appearance of the babies is similar to the The Forest.",
   "name": "Mutant Baby",
-  "slug": "Mutant_Baby",
-  "icon": "/icons/Mutant_Baby.png"
+  "slug": "Mutant_Baby"
  },
  {
   "alias": "",
@@ -296,8 +277,7 @@
   "weapon": "",
   "summary": "Initially, creepy mutants are only encountered in the caves and bunkers. As the days progress however (specific day is unknown), many of the variants start to appear on the surface, often spawning near cave entrances and certain points of interest. Sometimes, Blind Mutants and Fingers can also be seen tied up in certain cannibal camps. With Patch 03, some of the creepy mutants (such as the Puffies, Fingers, and Twins) may spawn near the player’s base and target structures. Mutants have a high surface spawn rate near cave entrances, especially during winter. Most are rather agile with high stam",
   "name": "Mutants",
-  "slug": "Mutants",
-  "icon": "/icons/Mutants.png"
+  "slug": "Mutants"
  },
  {
   "alias": "",
@@ -311,8 +291,7 @@
   "weapon": "",
   "summary": "Puffies are eye-less creatures that never wear any clothing nor wield any weapons. They have an unnatural grey skin color, and their faces appear to be overlapped with skin, similarly to mutant babies. There are both male and female variants; the latter features defined breasts and long hair. <br clear=\"right\">",
   "name": "Puffies",
-  "slug": "Puffies",
-  "icon": "/icons/Puffies.png"
+  "slug": "Puffies"
  },
  {
   "alias": "",
@@ -326,8 +305,7 @@
   "weapon": "Hit<br>Claw",
   "summary": "Regular cannibals exhibit a remarkable diversity of appearances compared to other cannibal types in the game, with over eight variants, each boasting unique features and attire. Male cannibals wield a weapon made from bones, with two variants observed, while female cannibals do not carry any weapons. Adorned in bone armor or tattered leather clothing, regular cannibals often bear tribal markings on their bodies, along with skull-like facial paintings. Each cannibal's clothing varies depending on their environment, whether it's the forest, winter, or the beach. For a detailed breakdown of the c",
   "name": "Regular Cannibals",
-  "slug": "Regular_Cannibals",
-  "icon": "/icons/Regular_Cannibals.png"
+  "slug": "Regular_Cannibals"
  },
  {
   "alias": "",
@@ -341,8 +319,7 @@
   "weapon": "",
   "summary": "They bear resemblance to great white sharks but with slightly longer secondary dorsal fin and exaggerated pelvic and pectoral fins. Coupling these features with their many scars gives them a more savage appearance.",
   "name": "Shark",
-  "slug": "Shark",
-  "icon": "/icons/Shark.png"
+  "slug": "Shark"
  },
  {
   "alias": "The Blob",
@@ -356,8 +333,7 @@
   "weapon": "Release Of Mutant Babies",
   "summary": "Sluggy is a large mutated mass of flesh that appears to have humanoid appendages, it is a faceless and legless mutant that can only move by sliding along the ground. However, it possesses multiple arms and is able to release large screeches when attacking the player. Its sheer size and distorted features give it the nickname \"The Blob.\"",
   "name": "Sluggy",
-  "slug": "Sluggy",
-  "icon": "/icons/Sluggy.png"
+  "slug": "Sluggy"
  },
  {
   "alias": "Spotty",
@@ -371,8 +347,7 @@
   "weapon": "Claw<br>Spin<br>Leap",
   "summary": "As their name implies, Spotted Puffies are covered in black spots and slightly larger than regular puffies.",
   "name": "Spotted Puffy",
-  "slug": "Spotted_Puffy",
-  "icon": "/icons/Spotted_Puffy.png"
+  "slug": "Spotted_Puffy"
  },
  {
   "alias": "Two faced mutant",
@@ -386,7 +361,6 @@
   "weapon": "",
   "summary": "The Twins appear as two deformed humans fused at the glutes with coordinated movements. Both of their limbs are extremely elongated and thin, with claw-like hands to strike with and climb walls. One face is deformed and split apart. The two humans the Twins comprised of are mostly similar, but the right one seems to be skinnier and has a dent in its head. If you look at the prominent features, you can see that one is female, and the other is male.",
   "name": "Twins",
-  "slug": "Twins",
-  "icon": "/icons/Twins.png"
+  "slug": "Twins"
  }
 ]

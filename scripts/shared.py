@@ -16,6 +16,27 @@ session.proxies.update(PROXY)
 session.headers.update(HEADERS)
 
 
+# --- wiki 魔术字展开 ---------------------------------------------------------
+# strip_templates() 会整段删掉无名模板，{{PAGENAME}}（条目名）随之消失，
+# 正文出现 "The in is a powerful that ..." 残句。必须在清洗前展开成真实文本。
+_MAGIC_TITLE = re.compile(r"\{\{\s*(?:SUB|BASE|FULL)?PAGENAME(?:E)?\s*\}\}", re.I)
+_MAGIC_GAME = re.compile(r"\{\{\s*(?:Gamename|Game|SITENAME|Sitename)\s*\}\}", re.I)
+_MAGIC_DROP = re.compile(
+    r"\{\{\s*(?:DISPLAYTITLE|DEFAULTSORT|#(?:expr|var|if|ifeq|ifexist|switch|tag|invoke|time|pos|len|replace|sub|explode|titleparts)[^}]*)\}\}",
+    re.I,
+)
+
+
+def expand_magic(wt: str | None, title: str) -> str | None:
+    """把 {{PAGENAME}} 换成条目名，丢弃解析器函数等元魔术字。"""
+    if not wt:
+        return wt
+    wt = _MAGIC_TITLE.sub(lambda _m: title, wt)
+    wt = _MAGIC_GAME.sub("Sons of the Forest", wt)
+    wt = _MAGIC_DROP.sub("", wt)
+    return wt
+
+
 def get_wikitext(title: str) -> str | None:
     for attempt in range(3):
         try:
@@ -25,7 +46,7 @@ def get_wikitext(title: str) -> str | None:
                 timeout=30,
             )
             d = r.json()
-            return d["parse"]["wikitext"]["*"] if "parse" in d else None
+            return expand_magic(d["parse"]["wikitext"]["*"], title) if "parse" in d else None
         except Exception as e:
             print(f"  retry {title}: {e}")
             time.sleep(2 * (attempt + 1))
