@@ -86,16 +86,25 @@ def expand_util_templates(wt: str | None) -> str | None:
 
 
 def get_wikitext(title: str) -> str | None:
-    for attempt in range(3):
+    for attempt in range(6):
         try:
             r = session.get(
                 API,
                 params={"action": "parse", "page": title, "prop": "wikitext", "format": "json"},
                 timeout=30,
             )
+            if r.status_code == 429:
+                wait = 15 * (attempt + 1)
+                print(f"  429 {title}, backoff {wait}s")
+                time.sleep(wait)
+                continue
             d = r.json()
             if "parse" in d:
                 return expand_util_templates(expand_magic(d["parse"]["wikitext"]["*"], title))
+            if r.status_code != 200:
+                print(f"  HTTP {r.status_code} {title}, backoff")
+                time.sleep(15 * (attempt + 1))
+                continue
             return None
         except Exception as e:
             print(f"  retry {title}: {e}")
@@ -154,8 +163,22 @@ def infobox_field(wikitext: str, field: str) -> str:
 
 def parse_weapon_table() -> list[dict]:
     """Fetch Weapons page rendered HTML and parse the weapon-table rows."""
-    r = session.get(API, params={"action": "parse", "page": "Weapons", "prop": "text", "format": "json"}, timeout=60)
-    html = r.json()["parse"]["text"]["*"]
+    html = None
+    for attempt in range(6):
+        r = session.get(API, params={"action": "parse", "page": "Weapons", "prop": "text", "format": "json"}, timeout=60)
+        if r.status_code == 429:
+            wait = 15 * (attempt + 1)
+            print(f"  429 Weapons page, backoff {wait}s")
+            time.sleep(wait)
+            continue
+        try:
+            html = r.json()["parse"]["text"]["*"]
+            break
+        except (KeyError, ValueError) as e:
+            print(f"  retry Weapons page ({e}), HTTP {r.status_code}")
+            time.sleep(15 * (attempt + 1))
+    if html is None:
+        raise RuntimeError("failed to fetch Weapons page HTML")
     soup = BeautifulSoup(html, "lxml")
     rows = soup.select("tr:has(td.weapon-table__item)")
     weapons = []
