@@ -64,5 +64,31 @@
   ],
   "footerNote": "Fan-made database. Not affiliated with the game publisher.",
   "gameVersion": "1.0",
-  "dataUpdated": "2026-09-06"
+  "dataUpdated": "2026-09-06",
+  "sisterSites": [
+    {
+      "name": "LongDarkDB",
+      "url": "https://thelongdark.lootseer.com",
+      "blurb": "Calories, hydration, vitamin C, clothing warmth and afflictions."
+    },
+    {
+      "name": "FactorDB",
+      "url": "https://abiotic.lootseer.com",
+      "blurb": "Weapons, armour, crafting and portal destinations from the GATE facility."
+    },
+    {
+      "name": "Dinkly",
+      "url": "https://dinkly.lootseer.com",
+      "blurb": "Three-minute micro-breaks: daily draws, quizzes, jokes and sounds."
+    },
+    {
+      "name": "CoreDB",
+      "url": "https://corekeeper.lootseer.com",
+      "blurb": "Weapons, armour, food and enemies with material tiers."
+    }
+  ],
+  "hubSite": {
+    "name": "LootSeer",
+    "url": "https://lootseer.com"
+  }
 }
