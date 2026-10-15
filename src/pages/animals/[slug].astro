@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import animals from "../../data/animals.json";
+import { animalDesc, animalTitle } from "../../lib/seo";
 
 import Related from "../../components/Related.astro";
 export function getStaticPaths() {
@@ -15,13 +16,11 @@ const sameGroup = animals
   .filter((a) => a.group && animal.group && a.group === animal.group && a.slug !== animal.slug)
   .slice(0, 8);
 const groupSlug = (animal.attitude || "other").toLowerCase().replace(/[^a-z0-9]+/g, "-");
-const title = `${animal.name} – Sons of the Forest Animal`;
-const desc =
-  animal.summary ||
-  `${animal.name} is ${/^[aeiou]/i.test(animal.group || "") ? "an" : "a"} ${animal.group || "animal"} in Sons of the Forest. See spawn locations, temperament and loot.`;
+const title = animalTitle(animal);
+const description = animalDesc(animal);
 ---
 
-<Base title={title} description={`Sons of the Forest ${animal.name}: where it spawns, temperament, what it drops and how to hunt or trap it. ${desc.slice(0, 100)}`}>
+<Base title={title} description={description}>
   <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
     <a href="/">Home</a> › <a href="/animals/">Animals</a> ›
     <a href={`/animals/group/${groupSlug}/`}>{animal.attitude || "Other"}</a> ›
@@ -68,7 +67,7 @@ const desc =
     "@context": "https://schema.org",
     "@type": "Article",
     headline: `${animal.name} – Sons of the Forest Animal`,
-    description: desc,
+    description: description,
     about: { "@type": "Thing", name: animal.name },
     isPartOf: { "@type": "WebSite", name: "TimberDB" },
   })} />

@@ -1,6 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import weapons from "../../data/weapons.json";
+import { weaponDesc, weaponTitle } from "../../lib/seo";
 
 import Related from "../../components/Related.astro";
 export function getStaticPaths() {
@@ -15,13 +16,11 @@ const sameType = weapons
   .filter((w) => w.type && weapon.type && w.type === weapon.type && w.slug !== weapon.slug)
   .slice(0, 8);
 const typeSlug = (weapon.type || "other").toLowerCase().replace(/[^a-z0-9]+/g, "-");
-const title = `${weapon.name} – Sons of the Forest Weapon`;
-const desc =
-  weapon.summary ||
-  `${weapon.name} is ${/^[aeiou]/i.test(weapon.type || "") ? "an" : "a"} ${weapon.type || "weapon"} in Sons of the Forest. See damage stats, speed and where to find it.`;
+const title = weaponTitle(weapon);
+const description = weaponDesc(weapon);
 ---
 
-<Base title={title} description={`Sons of the Forest ${weapon.name}: damage (standard/charged/downward), speed, range, how to get it and combat tips. ${desc.slice(0, 100)}`}>
+<Base title={title} description={description}>
   <nav class="muted" style="font-size:0.9rem;margin-bottom:1rem">
     <a href="/">Home</a> › <a href="/weapons/">Weapons</a> ›
     <a href={`/weapons/type/${typeSlug}/`}>{weapon.type || "Other"}</a> ›
@@ -74,7 +73,7 @@ const desc =
     "@context": "https://schema.org",
     "@type": "Article",
     headline: `${weapon.name} – Sons of the Forest Weapon`,
-    description: desc,
+    description: description,
     about: { "@type": "Thing", name: weapon.name },
     isPartOf: { "@type": "WebSite", name: "TimberDB" },
   })} />
